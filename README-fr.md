@@ -1,7 +1,6 @@
 # En français si vous plait? 🇨🇦
 
-**Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon!](https://pytorch.devpost.com/)**. 
-For the English readme documentation, [click here!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
+**Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon.](https://pytorch.devpost.com/)** For the English readme documentation, [click here!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
 
 <div>
   
