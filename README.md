@@ -36,9 +36,8 @@
 --- 
  
 ## French-English Translation Dataset
-* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download)
-* **French-English corpus size 2.3GB with 40.8M sentences**
-* Dataset includes the following:
+* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **French-English corpus size 2.3GB with 40.8M sentences**
+* Dataset includes:
   * Commoncrawl
   * Europarl-v7
   * Giga
@@ -57,7 +56,7 @@
 
 * **Multi-Hop Attention** 
   * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made
-  * Network has two decoder layers and attention is paid to each layer. Refer to image below.
+  * **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
