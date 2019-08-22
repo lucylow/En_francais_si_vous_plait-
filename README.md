@@ -86,7 +86,7 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
     -workers 60
 ```
-* 
+
 
 ---
 
