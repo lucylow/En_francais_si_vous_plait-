@@ -37,11 +37,11 @@
 ---  
 
 ## Technical Tools
-* **[Pytorch]**(https://pytorch.org) 
+* [**Pytorch**](https://pytorch.org) 
   * Deep learning research platform that provides maximum flexibility and speed
   * Provides Tensors that can live either on the CPU or the GPU, and accelerates the computation by a huge amount
   
-* **[Facebook AI Research's Fairseq]**(https://ai.facebook.com/tools/fairseq/) 
+* [**Facebook AI Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for translation, summarization, language modeling, and other text generation tasks
  
