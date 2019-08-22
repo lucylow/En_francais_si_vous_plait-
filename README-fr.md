@@ -1,4 +1,6 @@
-# En français si vous plait? &#x1F536;
+# En français si vous plait? 🇨🇦
+
+** Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon! # PTSH19] (https://pytorch.devpost.com/) **. For the English readme documentation, [click here!] (Https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
 
 <div>
   
@@ -7,66 +9,122 @@
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/pulls)
   [![License](https://img.shields.io/bower/l/bootstrap)]()
 
-</div>
 
-* **Analyse linguistique pour détecter les tonalités de langue à partir d'un texte écrit**
-* Analysez le ton sur le document et les niveaux de phrase pour **traduction français-anglais**
-* Découvrez le ton des communications du client et répond avec un ton approprié
-  
+---
 
-## La Motivation &#x1F536;
-“Mais non, le masculin l’emporte sur le féminin!” == “But no, **the masculine takes precedence over the feminine.**”
+## Motivation
 
-  ![Famille](https://github.com/lucylow/en_francais_si_vous_plait/blob/master/famille.png)
+* Mise en œuvre de la boîte à outils ** de Fairseq, Machine Learning Sequence Modeling, dans PyTorch **
+* Modèle de transformateur de traduction en langage machine de [* L'attention est tout ce dont vous avez besoin *] (https://arxiv.org/abs/1706.03762)
+* Applications métier pour connaître le ton des communications du client et répondre avec un ton approprié
 
-*(Référence de l'image: Quatrième année Lucy Low)*
+    
+---
 
+## Outils techniques
 
-## Masculin vs Féminin &#x1F536;
+* [** Pytorch **] (https://pytorch.org)
+  * Plateforme de recherche en apprentissage en profondeur offrant une flexibilité et une vitesse maximales ainsi que des tenseurs basés sur le processeur graphique accélérant le calcul
+  
+* [** Fairseq de Facebook Research **]] (https://ai.facebook.com/tools/fairseq/)
+  * Boîte à outils de modélisation de séquence écrite en PyTorch
+  * Former des modèles personnalisés pour ** traduction neuronale (NMT) ** - traduction, synthèse, modélisation de langage et autres tâches de génération de texte
+ 
 
-1. masculin “the” (le) vs féminin “the” (la)
-2. masculin “a” (un) vs féminin “a” (une)
-3. masculin "du" vs féminin “de la”
-4. masculin "knife" vs féminin "fork"
-5. masculin "madame le ministre" vs féminin "madame la ministre"
-6. masculin "directeur" vs féminin "directrice" **mais les sexes mélangés est "directeurs"**
-7. passé composé: 
-    * je suis allé(e) 
-    * tu es allé(e) 
-    * il/elle est allé(e) 
-    * nous sommes allé(e)s 
-    * vous êtes allé(e)(s) 
-    * ils/elles sont allé(e)s
+---
 
+## Modélisation séquence par séquence du transformateur convolutionnel
 
-## IBM Watson's Analyse linguistique &#x1F538;
+* Mesurer les traductions de vitesse
+  * Enregistrez le temps de traduction une fois que le système d'apprentissage machine affiche une phrase pour quantifier les résultats
+  * "** CNN le surpasse de 1,5 BLEU pour la tâche français-anglais du WMT 2014 **, une métrique largement utilisée pour juger de l'exactitude de la traduction automatique."
+  
+* Gating pour contrôler le flux d'unités cachées
 
-* **Analyse linguistique** pour détecter les tonalités de langue à partir d'un texte écrit
-* Requiert une authentification API via une identité basée sur un jeton.
-* Contenu d'entrée **128 Ko de données** ou **1000 phrases individuelles** en texte brut (jeu de caractères ASCII)
-* Pour plus d'informations, voir ici: https://cloud.ibm.com/apidocs/tone-analyzer
+* ** Attention multi-hop **
+  * Le codeur CNN crée un vecteur pour chaque mot à traduire et le décodeur CNN traduit les mots pendant que les calculs PyTorch sont effectués simultanément
+  * ** Le réseau a deux couches de décodeur et une attention particulière est accordée à chaque couche. ** Voir l'image ci-dessous.
 
-  ![IBM sentence tone data structure](https://github.com/lucylow/en_francais_si_vous_plait/blob/master/sentence%20tones.png)
+   ! [alt text bonjour] (https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
-*(Référence de l'image: Structure de données informatiques pour les tonalités de phrases)*
+   * Image de ** Calculs tensoriels ** à sauts multiples ** où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image] (https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) *
 
 
-## Terminaisons de Masculin &#x1F538;
+---
+ 
+## Jeu de données de traduction français-anglais
 
--an, -and, -ant, -ent, -in, -int, -om, -ond, -ont, -on, -eau, -au, -aud, -aut, -o, -os, -ot -ai, -ais, -ait, -es, -et -ou, -out, -out, -oux, -i, -il, -it, -is, -y -at, -as, -ois, -oit, -u, -us, -ut, -eu, -er, -é, -age, -ege, – ème, -ome, -aume, -isme -as, -is, -os, -us, -ex, -it, -est, -al, -el, -il, -ol, -eul, -all, -if, -ef, -ac, -ic, -oc, -uc -am, -um, -en, -air, -er, -erf, -ert, -ar, -arc, -ars, -art, -our, -ours, -or, -ord, -ors, -ort, -ir, -oir, -eur, -ail, -eil, -euil, -ueil, -ing
+* Traduction automatique statistique [WMT 2014 français-anglais] (http://statmt.org/wmt14/translation-task.html#Download) avec ** phrases d'une taille de corpus de 2,3 Go et 40,8 millions **
+* Le jeu de données comprend:
+  * Commoncrawl
+  * Europarl-v7
+  * Giga
+  * Nouvelles-commentaires
+  * Undoc
+* Pré-traitement du corpus de texte WMT2014
+
+`` `terminal
+données cd /
+bash prepare-iwslt14.sh
+
+TEXT = data / iwslt14.tokenized.fr-fr
+
+# Binarize data
+$ fairseq preprocess -sourcelang fr -targetlang en \
+    -trainpref $ TEXT / train -validpref $ TEXT / valide -testpref $ TEXT / test \
+    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin / iwslt14.tokenized.fr-en
+    travailleurs 60
+`` `
+
+---
+
+## Formation technique sur le modèle français-anglais
+
+** Former le nouveau modèle CNN avec le train * -fairseq ***
+
+`` `python
+$ mkdir -p trainings / fconv
+
+$ fairseq train -sourcelang fr -targetlang en -datadir data-bin / iwslt14.tokenized.fr-en \
+  -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
+  -momentum 0,99 -timeavg -bptt 0
+  -savedir formations / fconv
+`` `
+
+** La génération de modèle avec * -fairseq génère ***
+
+`` `python
+$ DATA = data-bin / iwslt14.tokenized.fr-en
+
+$ fairseq generate-lines -sourcedict $ DATA / dict.fr.th7 -targetdict $ DATA / dict.en.th7 \
+  -path trainings / fconv / model_best_opt.th7 -beam 10 -nbest
+| [cible] Dictionnaire: 24738 types
+| Dictionnaire [source]: 35474 types
+
+> Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
+
+Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
+Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
+Hypothèse: -0.23804219067097 Pourquoi est-il rare de découvrir de nouvelles espèces marines mam @@ mal?
+Attention_Maxima: 2 2 3 4 5 6 7 8 9
+Hypothèse: -0.23861141502857 Pourquoi est-il rare de découvrir de nouvelles espèces marines mam @@ mal?
+Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
+`` `
+---
+
+## Modèles techniques et ensembles de test
+
+* Modèle entièrement pré-entrainé
+  * ** wmt14.en-fr.fconv-cuda.tar.bz2: ** Modèle pré-formé pour le WMT14 anglais-français, y compris les vocabulaires
+  
+* Ensembles de test pour le modèle
+  * ** wmt14.en-fr.newstest2014.tar.bz2: ** Ensemble de test newstest2014 pour WMT14 anglais-français
+  * ** wmt14.en-fr.ntst1213.tar.bz2: ** ensembles de test newstest2012 et newstest2013 pour WMT14 anglais-français
 
 
-## Terminaisons de Féminin &#x1F538;
+---
 
--aie, -oue, -eue, -ion, -te, – ée, -ie, -ue, -asse, -ace, -esse, -ece, -aisse, -isse, -ice, -ousse, -ance, -anse, -ence, -once -enne, -onne, -une, -ine, -aine, -eine, -erne, -ande, -ende, -onde, -ade, -ude, -arde, -orde, -euse, -ouse, -ase, -aise, -ese, -oise, -ise, -yse, -ose, -use, -ache, -iche, -eche, -oche, -uche, -ouche, -anche, -ave, -eve, -ive, -iere, -ure, -eure, -ette, -ete, – ête, -atte, -otte, -oute, -orte, -ante, -ente, -inte, -onte, -alle, -elle, -ille, -olle, -aille, -eille, -ouille, -appe, -ampe, -ombe, -igue
+## Références
 
-
-## Outils logiciels &#x1F536;
-
-* Django Python Framework
-* IBM Watson Tone Analyzer V3
-
-## Références &#x1F536;
-
-* Caroline Criado-Pérez. "Invisble Women: Data Bias in a World Designed for Men."
-
+* https://ai.facebook.com/tools/fairseq/
+* Document technique Fairseq
