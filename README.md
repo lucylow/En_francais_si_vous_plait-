@@ -37,11 +37,11 @@
 ---  
 
 ## Technical Tools
-* [Pytorch](https://pytorch.org) 
+* **[Pytorch]**(https://pytorch.org) 
   * Deep learning research platform that provides maximum flexibility and speed
   * Provides Tensors that can live either on the CPU or the GPU, and accelerates the computation by a huge amount
   
-* [Facebook AI Research's Fairseq](https://ai.facebook.com/tools/fairseq/) 
+* **[Facebook AI Research's Fairseq]**(https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for translation, summarization, language modeling, and other text generation tasks
  
@@ -75,24 +75,6 @@
 * Test sets for model
   * wmt14.en-fr.newstest2014.tar.bz2: newstest2014 test set for WMT14 English-French
   * wmt14.en-fr.ntst1213.tar.bz2: newstest2012 and newstest2013 test sets for WMT14 English-French
-
-
----
-
-# Requirements
-
-1) Install PyTorch
-
-2) Install fairseq-py
-
-  > git clone https://github.com/pytorch/fairseq.git
-  
-  > cd fairseq
-  
-  > pip install -r requirements.txt
-  
-  > python setup.py build develop
-
 
 ---
 
