@@ -113,12 +113,11 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ## Modèles Techniques et Ensembles de Test
 
 * Modèle entièrement pré-entrainé
-  * **wmt14.en-fr.fconv-cuda.tar.bz2:** Modèle pré-formé pour le WMT14 anglais-français, y compris les vocabulaires
+  * wmt14.en-fr.fconv-cuda.tar.bz2: Modèle pré-formé pour le WMT14 anglais-français, y compris les vocabulaires
   
 * Ensembles de test pour le modèle
-  * **wmt14.en-fr.newstest2014.tar.bz2:** Ensemble de test newstest2014 pour WMT14 anglais-français
-  * **wmt14.en-fr.ntst1213.tar.bz2:** ensembles de test newstest2012 et newstest2013 pour WMT14 anglais-français
-
+  * wmt14.en-fr.newstest2014.tar.bz2: Ensemble de test newstest2014 pour WMT14 anglais-français
+  * wmt14.en-fr.ntst1213.tar.bz2: ensembles de test newstest2012 et newstest2013 pour WMT14 anglais-français
 
 ---
 
