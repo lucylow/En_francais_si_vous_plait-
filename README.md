@@ -32,28 +32,6 @@
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
  
---- 
- 
-## French-English Translation Dataset
-
-* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 40.8M sentences**
-* Dataset includes:
-  * Commoncrawl
-  * Europarl-v7
-  * Giga
-  * News-commentary
-  * Undoc
-* Pre-process the French-English WMT 2014 corpus
-
-```terminal
-cd data/
-bash prepare-iwslt14.sh
-TEXT=data/iwslt14.tokenized.fr-en
-
-$ fairseq preprocess -sourcelang fr -targetlang en \
-    -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
-    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
-```
 
 --- 
 
@@ -72,6 +50,30 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
        *Image of **Multi-hop Attention** tensor computations where green lines represent attention paid to each French word. [Image Source](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
+
+
+--- 
+ 
+## French-English Translation Dataset
+
+* Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 40.8M sentences**
+* Dataset includes:
+  * Commoncrawl
+  * Europarl-v7
+  * Giga
+  * News-commentary
+  * Undoc
+* Pre-process the French-English WMT 2014 corpus
+
+```terminal
+cd data/
+bash prepare-iwslt14.sh
+TEXT=data/iwslt14.tokenized.fr-en
+
+$ fairseq preprocess -sourcelang fr -targetlang en \
+    -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
+    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
+```
 
 ---
 
