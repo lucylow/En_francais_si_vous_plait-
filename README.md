@@ -20,10 +20,9 @@
 * Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762)
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
-    ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg)
+    ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
-  <a href="https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg" >
-    <img src="En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg" width="600" height="700"> </a>
+
 
 ---  
 
