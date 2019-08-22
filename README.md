@@ -20,7 +20,8 @@
 * Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762)
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
-    
+    ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg)
+
 ---  
 
 ## Technical Tools
@@ -39,7 +40,10 @@
 
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
-  * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 French-English task**, a widely used metric for judging the accuracy of machine translation."
+  * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 French-English task**, a widely used metric for judging the accuracy of machine translation." 
+  * Transformer model high in BLEU scale and low on training costs
+  
+     ![alt text](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
   
 * Gating to control flow of hidden-units
 
@@ -57,6 +61,9 @@
 ## French-English Translation Dataset
 
 * Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 40.8M sentences**
+
+    ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20self-attention%20encoder%20sentence%20structure.png)
+
 * Dataset includes:
   * Commoncrawl
   * Europarl-v7
@@ -77,6 +84,7 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
     -workers 60
 ```
+* 
 
 ---
 
