@@ -25,8 +25,7 @@
 
 ## Technical Tools
 * [**Pytorch**](https://pytorch.org) 
-  * Deep learning research platform that provides maximum flexibility and speed
-  * Provides Tensors that can live either on the CPU or the GPU, and accelerates the computation by a huge amount
+  * Deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
   
 * [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
@@ -105,7 +104,7 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
 
 ```python
 $ mkdir -p trainings/fconv
-$ fairseq train -sourcelang de -targetlang en -datadir data-bin/iwslt14.tokenized.de-en \
+$ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenized.fr-en \
   -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
   -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
 ```
@@ -124,11 +123,10 @@ $ fairseq generate-lines -sourcedict $DATA/dict.fe.th7 -targetdict $DATA/dict.en
 Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
 Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
 Hypothesis:-0.23804219067097 Why is it rare to discover new marine mam@@ mal species ?
-A	2 2 3 4 5 6 7 8 9
+Attention_Maxima: 2 2 3 4 5 6 7 8 9
 Hypothesis:-0.23861141502857 Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
-
 
 
 ---
