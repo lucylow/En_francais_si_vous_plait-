@@ -19,16 +19,7 @@
 * **Linguistic analysis** to detect language tones from written text
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
-* French-English Translations
-  * Masculine “the” (le) vs Feminine “the” (la)
-  * Masculine “a” (un) vs Feminine “a” (une)
-  * Passé Composé Tense: 
-   * Je suis allé(e) 
-   * Tu es allé(e) 
-   * Il/elle est allé(e) 
-   * Nous sommes allé(e)s 
-   * Vous êtes allé(e)(s) 
-   * Ils/elles sont allé(e)s
+
     
 ---  
 
@@ -66,11 +57,11 @@
 # Technical Translation Model and Test Sets
 
 * Fully pretrained model
-  * wmt14.en-fr.fconv-cuda.tar.bz2: Pre-trained model for WMT14 English-French including vocabularies
+  * **wmt14.en-fr.fconv-cuda.tar.bz2:** Pre-trained model for WMT14 English-French including vocabularies
   
 * Test sets for model
-  * wmt14.en-fr.newstest2014.tar.bz2: newstest2014 test set for WMT14 English-French
-  * wmt14.en-fr.ntst1213.tar.bz2: newstest2012 and newstest2013 test sets for WMT14 English-French
+  * **wmt14.en-fr.newstest2014.tar.bz2:** newstest2014 test set for WMT14 English-French
+  * **wmt14.en-fr.ntst1213.tar.bz2:** newstest2012 and newstest2013 test sets for WMT14 English-French
 
 ---
 
@@ -85,7 +76,8 @@ $ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | 
 **Translate text with *fairseq generate-lines***
 
 ```python
-Why is it rare to discover new marine mam@@ mal species ?
+> Why is it rare to discover new marine mam@@ mal species ?
+
 Source: Why is it rare to discover new marine mam@@ mal species ?
 Original_Sentence: Why is it rare to discover new marine mam@@ mal species ?
 Hypothesis: -0.068684287369251 Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
@@ -103,6 +95,7 @@ cd data/
 bash prepare-iwslt14.sh
 cd ..
 TEXT=data/iwslt14.tokenized.fe-en
+
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
@@ -121,13 +114,13 @@ $ fairseq train -sourcelang de -targetlang en -datadir data-bin/iwslt14.tokenize
 
 ```python
 $ DATA=data-bin/iwslt14.tokenized.fe-en
-
 $ fairseq generate-lines -sourcedict $DATA/dict.fe.th7 -targetdict $DATA/dict.en.th7 \
   -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 
 | [target] Dictionary: 24738 types
 | [source] Dictionary: 35474 types
 
 > Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+
 Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
 Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
 Hypothesis:-0.23804219067097 Why is it rare to discover new marine mam@@ mal species ?
