@@ -34,7 +34,7 @@
 --- 
  
 
-## Technical Convolutional Neural Networks (CNN)
+## Deep Learning - Convolutional Neural Networks (CNN)
 
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
@@ -52,18 +52,7 @@
 
 ---
 
-# Technical Translation Model and Test Sets
-
-* Fully pretrained model
-  * **wmt14.en-fr.fconv-cuda.tar.bz2:** Pre-trained model for WMT14 English-French including vocabularies
-  
-* Test sets for model
-  * **wmt14.en-fr.newstest2014.tar.bz2:** newstest2014 test set for WMT14 English-French
-  * **wmt14.en-fr.ntst1213.tar.bz2:** newstest2012 and newstest2013 test sets for WMT14 English-French
-
----
-
-# Train New French-English Model
+# Technical Train the French-English Model
 
 **Pre-process the French-English corpus on terminal**
 
@@ -105,6 +94,16 @@ Attention_Maxima: 2 2 3 4 5 6 7 8 9
 Hypothesis:-0.23861141502857 Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
+---
+
+#  Technical Models and Test Sets
+
+* Fully pretrained model
+  * **wmt14.en-fr.fconv-cuda.tar.bz2:** Pre-trained model for WMT14 English-French including vocabularies
+  
+* Test sets for model
+  * **wmt14.en-fr.newstest2014.tar.bz2:** newstest2014 test set for WMT14 English-French
+  * **wmt14.en-fr.ntst1213.tar.bz2:** newstest2012 and newstest2013 test sets for WMT14 English-French
 
 
 ---
