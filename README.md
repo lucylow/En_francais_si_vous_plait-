@@ -129,6 +129,7 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ## References
 
 * https://ai.facebook.com/tools/fairseq/
+* Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
 * "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
 * "Attention Is All You Need" https://arxiv.org/abs/1706.03762
