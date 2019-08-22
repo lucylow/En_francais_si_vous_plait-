@@ -45,6 +45,7 @@ For the English readme documentation, [click here!](https://github.com/lucylow/e
    * **Le réseau a deux couches de décodeur et une attention particulière est accordée à chaque couche.** Voir l'image ci-dessous:
 
        ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
+     
         *Image de **Calculs tensoriels** à sauts multiples où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
 
 ---
@@ -116,7 +117,7 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
   
 * Ensembles de test pour le modèle
   * wmt14.en-fr.newstest2014.tar.bz2: Ensemble de test newstest2014 pour WMT14 anglais-français
-  * wmt14.en-fr.ntst1213.tar.bz2: ensembles de test newstest2012 et newstest2013 pour WMT14 anglais-français
+  * wmt14.en-fr.ntst1213.tar.bz2: Ensembles de test newstest2012 et newstest2013 pour WMT14 anglais-français
 
 ---
 
