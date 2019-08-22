@@ -17,15 +17,7 @@ Pour la documentation en français, [cliquez ici 🇨🇦](https://github.com/lu
 
 * **Linguistic analysis to detect language tones from written text**
 * Analyze tone on document and sentence levels for **French-English translations**
-* Learn the tone of customer's communications and responds with an appropriate tone
-  
-
-## Problem / Motivation &#x1F536;
-“Mais non, le masculin l’emporte sur le féminin!” == **“But no, the masculine takes precedence over the feminine.**”
-
-  ![Famille](https://github.com/lucylow/en_francais_si_vous_plait/blob/master/famille.png)
-
-*Image Reference: Grade 4 Lucy Low 🇨🇦*
+* Learn the tone of customer's communications and responds with an appropriate tone  
 
 ## French-English Examples &#x1F536;
 1. masculine “the” (le) vs feminine “the” (la)
@@ -42,17 +34,6 @@ Pour la documentation en français, [cliquez ici 🇨🇦](https://github.com/lu
     * vous êtes allé(e)(s) 
     * ils/elles sont allé(e)s
 
-
-## IBM Watson's Tone Analyzer
-* **Linguistic analysis** to detect language tones from written text
-* Requires API authentication via token-based identity
-* Input content **128KB of data** or **1000 indivdual sentences** in plain text (the ASCII character set) 
-* For more info see here: https://cloud.ibm.com/apidocs/tone-analyzer
-
-  ![IBM sentence tone data structure](https://github.com/lucylow/en_francais_si_vous_plait/blob/master/sentence%20tones.png)
-
-*Image of data structure for sentence tones*
-
 ## Masculine Endings &#x1F538;
 
 -an, -and, -ant, -ent, -in, -int, -om, -ond, -ont, -on, -eau, -au, -aud, -aut, -o, -os, -ot -ai, -ais, -ait, -es, -et -ou, -out, -out, -oux, -i, -il, -it, -is, -y -at, -as, -ois, -oit, -u, -us, -ut, -eu, -er, -é, -age, -ege, – ème, -ome, -aume, -isme -as, -is, -os, -us, -ex, -it, -est, -al, -el, -il, -ol, -eul, -all, -if, -ef, -ac, -ic, -oc, -uc -am, -um, -en, -air, -er, -erf, -ert, -ar, -arc, -ars, -art, -our, -ours, -or, -ord, -ors, -ort, -ir, -oir, -eur, -ail, -eil, -euil, -ueil, -ing
@@ -65,9 +46,7 @@ Pour la documentation en français, [cliquez ici 🇨🇦](https://github.com/lu
 
 ## Tools &#x1F536;
 
-* Django Python Framework
-* IBM Watson Tone Analyzer V3
+
 
 ## References &#x1F536;
 
-* Caroline Criado-Pérez. "Invisble Women: Data Bias in a World Designed for Men."
