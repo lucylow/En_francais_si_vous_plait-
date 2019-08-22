@@ -37,7 +37,9 @@
 ---  
 
 ## Technical Tools
-
+* [Pytorch](https://pytorch.org) 
+  * Deep learning research platform that provides maximum flexibility and speed
+  * Provides Tensors that can live either on the CPU or the GPU, and accelerates the computation by a huge amount
 * [Facebook AI Research's Fairseq](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for translation, summarization, language modeling, and other text generation tasks
@@ -60,7 +62,7 @@
 
    ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
-    *Image of **Multi-hop Attention** computations from [here](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) where green lines represent attention paid to each French word.*
+    *Image of **Multi-hop Attention** tensor computations from [here](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) where green lines represent attention paid to each French word.*
 
 
 ---
@@ -85,4 +87,5 @@
 * https://ai.facebook.com/tools/fairseq/
 * "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
+* "Attention Is All You Need" https://arxiv.org/abs/1706.03762
 
