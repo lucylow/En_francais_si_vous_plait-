@@ -4,9 +4,9 @@ Pour la documentation en français, [cliquez ici 🇨🇦](https://github.com/lu
 
 <div>
   
-  [![Status](https://img.shields.io/badge/status-work--in--progress-success.svg)]()
-  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/pulls)
+  [![Status](https://img.shields.io/badge/status-success.svg)]()
+  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait-.svg)](https://github.com/lucylow/en_francais_si_vous_plait-/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait-.svg)](https://github.com/lucylow/en_francais_si_vous_plait-/pulls)
   [![License](https://img.shields.io/bower/l/bootstrap)]()
 
 </div>
