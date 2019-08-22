@@ -80,28 +80,24 @@
 
 # Pre-trained Models
 
-1) Download French-English model wmt14.en-fr.fconv-cuda/
+Download French-English model wmt14.en-fr.fconv-cuda/
 
   > $ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | tar xvjf -
 
-2) Translate text with *fairseq generate-lines*
+Translate text with *fairseq generate-lines*
 
-'''python
-
-> Why is it rare to discover new marine mam@@ mal species ?
+'''> Why is it rare to discover new marine mam@@ mal species ?
 Source:	Why is it rare to discover new marine mam@@ mal species ?
 Original_Sentence:	Why is it rare to discover new marine mam@@ mal species ?
 Hypothesis:	-0.068684287369251	Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13
-
-'''
+Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13'''
 
 
 ---
 
 # Train New Language Model
 
-1) Pre-process the French-English corpus on terminal
+Pre-process the French-English corpus on terminal
 
 > cd data/
 
@@ -116,7 +112,7 @@ Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
 
 
-2) Train new CNN model with *fairseq train* (uses all GPUs on machine)
+Train new CNN model with *fairseq train* (uses all GPUs on machine)
 
 '''
 $ mkdir -p trainings/fconv
