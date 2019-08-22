@@ -11,26 +11,21 @@ Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en
 
 </div>
 
-**This is a machine learning project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. French-English linguistic analysis to detect language tones from written text on document and sentence levels.
+**This is a machine learning project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. 
 
 ---
 
 ## Motivation/Introduction
 
-* **Linguistic analysis to detect language tones from written text**. Learn the tone of customer's communications and responds with an appropriate tone  
+* **Linguistic analysis to detect language tones from written text**. Learn the tone of customer's communications and responds with an appropriate tone!
 * Fairseq Machine Learning Sequence Modeling toolkit in PyTorch
-* Record speed translations (how long it takes to get a translation once we show the system a sentence) : "The **CNN outperforms it by 1.5 BLEU on the WMT 2014 English-French task**, a widely used metric for judging the accuracy of machine translation."
+* Record speed translations (time it takes to get translation once system shown a sentence)
+  * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 English-French task**, a widely used metric for judging the accuracy of machine translation."
 * **Multi-Hop Attention** for faster language encoding and decoding 
-* Gating to control flow of hidden-units in neuural network
+* Gating to control flow of hidden-units in neural network
 
 ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
-*Image of **Multi-hop Attention computations** from https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation/. CNN encoder creates a vector for each word to be translated. CNN decoder trnslates the English words while computations are being simultaneously made. Network has two layers in decoder and attention is paid to each layer. Greenline == attention fo each French word. *
-
-
-
-*
-*
-
+*Image of **Multi-hop Attention computations** from https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation/. CNN encoder creates a vector for each word to be translated. CNN decoder trnslates the English words while computations are being simultaneously made. Network has two layers in decoder and attention is paid to each layer. Greenline == attention fo each French word.*
 
 ---
 
