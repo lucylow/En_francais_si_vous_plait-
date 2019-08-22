@@ -66,9 +66,8 @@
 * Pre-process the French-English WMT 2014 corpus
 
 ```terminal
-cd data/
 bash prepare-iwslt14.sh
-TEXT=data/iwslt14.tokenized.fr-en
+TEXT=iwslt14.tokenized.fr-en
 
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
