@@ -1,6 +1,6 @@
 # En français si vous plait? 🇨🇦
 
-**Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon! # PTSH19](https://pytorch.devpost.com/)**. 
+**Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon!](https://pytorch.devpost.com/)**. 
 For the English readme documentation, [click here!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
 
 <div>
@@ -15,7 +15,7 @@ For the English readme documentation, [click here!](https://github.com/lucylow/e
 ## Motivational
 
 * Mise en œuvre de la boîte à outils **de Fairseq, Machine Learning Sequence Modeling, dans PyTorch**
-* Modèle de transformateur de traduction en langage machine de [*L'attention est tout ce dont vous avez besoin*](https://arxiv.org/abs/1706.03762)
+* Modèle de transformateur de traduction en langage machine de [*Attention is all you need*](https://arxiv.org/abs/1706.03762)
 * Applications métier pour connaître le ton des communications du client et répondre avec un ton approprié
 
 ---
