@@ -6,7 +6,7 @@ For the English readme documentation, [click here!](https://github.com/lucylow/e
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/issues)
+  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait-.svg)](https://github.com/lucylow/en_francais_si_vous_plait/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/pulls)
   [![License](https://img.shields.io/bower/l/bootstrap)]()
 
@@ -49,7 +49,6 @@ For the English readme documentation, [click here!](https://github.com/lucylow/e
     *Image de **Calculs tensoriels** à sauts multiples où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
 
 ---
- 
 ## Traduction Français-Anglais
 
 * Traduction automatique statistique [WMT 2014 Français-Anglais](http://statmt.org/wmt14/translation-task.html#Download) avec **corpus de 2.3GB et 40.8 millions phrases**
@@ -77,7 +76,6 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
 ```
 
 ---
-
 ## Formation Technique sur le Modèle Français-Anglais
 
 **Former le nouveau modèle CNN avec le train *-fairseq***
