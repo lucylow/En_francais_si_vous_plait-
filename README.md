@@ -23,10 +23,10 @@
 
 ---
 
-## French-English Examples
-* Masculine “the” (le) vs feminine “the” (la)
-* Nasculine “a” (un) vs feminine “a” (une)
-* Passé composé tense: 
+## French-English Translations
+* Masculine “the” (le) vs Feminine “the” (la)
+* Masculine “a” (un) vs Feminine “a” (une)
+* Passé Composé Tense: 
   * Je suis allé(e) 
   * Tu es allé(e) 
   * Il/elle est allé(e) 
@@ -40,7 +40,7 @@
 
 * [Facebook AI Research's Fairseq](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
-  * Train custom models for translation, summarization, language modeling and other text generation tasks.
+  * Train custom models for translation, summarization, language modeling, and other text generation tasks
  
 --- 
  
@@ -68,6 +68,7 @@
 # Steps
 
 1) Install PyTorch
+
 2) Install fairseq-py
 
   > git clone https://github.com/pytorch/fairseq.git
@@ -81,7 +82,7 @@
 ---
 
 ## References
-- https://ai.facebook.com/tools/fairseq/
-- "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
-- "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
+* https://ai.facebook.com/tools/fairseq/
+* "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
+* "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
 
