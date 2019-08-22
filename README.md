@@ -18,12 +18,14 @@
 
 * **Linguistic analysis** to detect language tones from written text
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
+* Neural Network machine translation converting text from source language into matching text in a target language
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
     
 ---  
 
 ## Technical Tools
+
 * [**Pytorch**](https://pytorch.org) 
   * Deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
   
@@ -33,12 +35,23 @@
  
 --- 
  
+## French-English Translation Dataset
+* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download)
+* **French-English corpus size 2.3GB with 40.8M sentences**
+* Dataset includes the following:
+  * Commoncrawl
+  * Europarl-v7
+  * Giga
+  * News-commentary
+  * Undoc
+
+--- 
 
 ## Deep Learning - Convolutional Neural Networks (CNN)
 
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
-  * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 English-French task**, a widely used metric for judging the accuracy of machine translation."
+  * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 French-English task**, a widely used metric for judging the accuracy of machine translation."
   
 * Gating to control flow of hidden-units
 
@@ -52,7 +65,7 @@
 
 ---
 
-# Technical Train the French-English Model
+## Technical Train the French-English Model
 
 **Pre-process the French-English corpus on terminal**
 
@@ -96,7 +109,7 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
 ---
 
-#  Technical Models and Test Sets
+##  Technical Models and Test Sets
 
 * Fully pretrained model
   * **wmt14.en-fr.fconv-cuda.tar.bz2:** Pre-trained model for WMT14 English-French including vocabularies
@@ -109,6 +122,7 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ---
 
 ## References
+
 * https://ai.facebook.com/tools/fairseq/
 * "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
