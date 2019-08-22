@@ -66,9 +66,10 @@
 * Pre-process WMT2014 text corpus
 
 ```terminal
+cd data/
 bash prepare-iwslt14.sh
 
-TEXT=iwslt14.tokenized.fr-en
+TEXT=data/iwslt14.tokenized.fr-en
 
 # Binarize data
 $ fairseq preprocess -sourcelang fr -targetlang en \
