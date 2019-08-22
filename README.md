@@ -22,6 +22,9 @@
 
     ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg)
 
+  <a href="https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg" >
+    <img src="En_francais_si_vous_plait-/blob/master/screenshots/The%20Transformer%20Model%20-%20full%20architecture.jpeg" width="600" height="700"> </a>
+
 ---  
 
 ## Technical Tools
