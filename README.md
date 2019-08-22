@@ -114,16 +114,16 @@ Pre-process the French-English corpus on terminal
 
 Train new CNN model with *fairseq train* (uses all GPUs on machine)
 
-'''
+'py
 $ mkdir -p trainings/fconv
 $ fairseq train -sourcelang de -targetlang en -datadir data-bin/iwslt14.tokenized.de-en \
   -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
   -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
-'''
+'
 
 3) Model Generation with  *fairseq generate*
 
-'''python
+'python
 $ DATA=data-bin/iwslt14.tokenized.fe-en
 $ fairseq generate-lines -sourcedict $DATA/dict.fe.th7 -targetdict $DATA/dict.en.th7 \
   -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 2
@@ -136,7 +136,7 @@ Hypothesis:	-0.23804219067097	Why is it rare to discover new marine mam@@ mal sp
 A	2 2 3 4 5 6 7 8 9
 Hypothesis:	-0.23861141502857	Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima:	2 2 3 4 5 7 6 7 9 9
-'''
+'
 
 
 
