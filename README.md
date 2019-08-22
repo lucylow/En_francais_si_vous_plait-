@@ -19,20 +19,16 @@
 * **Linguistic analysis** to detect language tones from written text
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
-
-
----
-
-## French-English Translations
-* Masculine “the” (le) vs Feminine “the” (la)
-* Masculine “a” (un) vs Feminine “a” (une)
-* Passé Composé Tense: 
-  * Je suis allé(e) 
-  * Tu es allé(e) 
-  * Il/elle est allé(e) 
-  * Nous sommes allé(e)s 
-  * Vous êtes allé(e)(s) 
-  * Ils/elles sont allé(e)s
+* French-English Translations
+  * Masculine “the” (le) vs Feminine “the” (la)
+  * Masculine “a” (un) vs Feminine “a” (une)
+  * Passé Composé Tense: 
+   * Je suis allé(e) 
+   * Tu es allé(e) 
+   * Il/elle est allé(e) 
+   * Nous sommes allé(e)s 
+   * Vous êtes allé(e)(s) 
+   * Ils/elles sont allé(e)s
     
 ---  
 
@@ -41,7 +37,7 @@
   * Deep learning research platform that provides maximum flexibility and speed
   * Provides Tensors that can live either on the CPU or the GPU, and accelerates the computation by a huge amount
   
-* [**Facebook AI Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
+* [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for translation, summarization, language modeling, and other text generation tasks
  
@@ -78,27 +74,29 @@
 
 ---
 
-# Pre-trained Models
+# Download Pre-trained French-English Models
 
-Download French-English model wmt14.en-fr.fconv-cuda/
+**Download model wmt14.en-fr.fconv-cuda/**
 
-  > $ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | tar xvjf -
+```python
+$ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | tar xvjf -
+```
 
-Translate text with *fairseq generate-lines*
+**Translate text with *fairseq generate-lines***
 
 ```python
 Why is it rare to discover new marine mam@@ mal species ?
-Source:	Why is it rare to discover new marine mam@@ mal species ?
-Original_Sentence:	Why is it rare to discover new marine mam@@ mal species ?
-Hypothesis:	-0.068684287369251	Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13
+Source: Why is it rare to discover new marine mam@@ mal species ?
+Original_Sentence: Why is it rare to discover new marine mam@@ mal species ?
+Hypothesis: -0.068684287369251 Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+Attention_Maxima: 1 1 4 4 6 6 7 11 9 9 9 12 13
 ```
 
 ---
 
-# Train New Language Model
+# Train New French-English Model
 
-Pre-process the French-English corpus on terminal
+**Pre-process the French-English corpus on terminal**
 
 ```terminal
 cd data/
@@ -110,7 +108,7 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
 ```
 
-Train new CNN model with *fairseq train* 
+**Train new CNN model with *fairseq train***
 
 ```python
 $ mkdir -p trainings/fconv
@@ -119,21 +117,23 @@ $ fairseq train -sourcelang de -targetlang en -datadir data-bin/iwslt14.tokenize
   -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
 ```
 
-Model Generation with  *fairseq generate*
+**Model Generation with *fairseq generate***
 
 ```python
 $ DATA=data-bin/iwslt14.tokenized.fe-en
+
 $ fairseq generate-lines -sourcedict $DATA/dict.fe.th7 -targetdict $DATA/dict.en.th7 \
   -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 
 | [target] Dictionary: 24738 types
 | [source] Dictionary: 35474 types
+
 > Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Source:	Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Original_Sentence:	Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Hypothesis:	-0.23804219067097	Why is it rare to discover new marine mam@@ mal species ?
+Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+Hypothesis:-0.23804219067097 Why is it rare to discover new marine mam@@ mal species ?
 A	2 2 3 4 5 6 7 8 9
-Hypothesis:	-0.23861141502857	Why is it rare to discover new marine mam@@ mal species ?
-Attention_Maxima:	2 2 3 4 5 7 6 7 9 9
+Hypothesis:-0.23861141502857 Why is it rare to discover new marine mam@@ mal species ?
+Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
 
 
