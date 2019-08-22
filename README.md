@@ -16,7 +16,6 @@
 
 ## Motivation
 
-* **Linguistic analysis** to detect language tones from written text
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 * Neural Network machine translation converting text from source language into matching text in a target language
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
@@ -36,7 +35,7 @@
 --- 
  
 ## French-English Translation Dataset
-* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **French-English corpus size 2.3GB with 40.8M sentences**
+* Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 40.8M sentences**
 * Dataset includes:
   * Commoncrawl
   * Europarl-v7
