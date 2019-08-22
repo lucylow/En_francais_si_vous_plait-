@@ -86,12 +86,13 @@ Download French-English model wmt14.en-fr.fconv-cuda/
 
 Translate text with *fairseq generate-lines*
 
-'''> Why is it rare to discover new marine mam@@ mal species ?
+```python
+Why is it rare to discover new marine mam@@ mal species ?
 Source:	Why is it rare to discover new marine mam@@ mal species ?
 Original_Sentence:	Why is it rare to discover new marine mam@@ mal species ?
 Hypothesis:	-0.068684287369251	Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13'''
-
+Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13
+```
 
 ---
 
@@ -99,27 +100,29 @@ Attention_Maxima:	1 1 4 4 6 6 7 11 9 9 9 12 13'''
 
 Pre-process the French-English corpus on terminal
 
-> cd data/
+```terminal
+cd data/
 bash prepare-iwslt14.sh
 cd ..
 TEXT=data/iwslt14.tokenized.fe-en
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
-
+```
 
 Train new CNN model with *fairseq train* 
 
-
->$ mkdir -p trainings/fconv
+```python
+$ mkdir -p trainings/fconv
 $ fairseq train -sourcelang de -targetlang en -datadir data-bin/iwslt14.tokenized.de-en \
   -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
   -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
-
+```
 
 Model Generation with  *fairseq generate*
 
->$ DATA=data-bin/iwslt14.tokenized.fe-en
+```python
+$ DATA=data-bin/iwslt14.tokenized.fe-en
 $ fairseq generate-lines -sourcedict $DATA/dict.fe.th7 -targetdict $DATA/dict.en.th7 \
   -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 
 | [target] Dictionary: 24738 types
@@ -131,7 +134,7 @@ Hypothesis:	-0.23804219067097	Why is it rare to discover new marine mam@@ mal sp
 A	2 2 3 4 5 6 7 8 9
 Hypothesis:	-0.23861141502857	Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima:	2 2 3 4 5 7 6 7 9 9
-
+```
 
 
 
