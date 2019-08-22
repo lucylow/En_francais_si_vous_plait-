@@ -36,15 +36,14 @@
 
 ## Technical Convolutional Neural Networks (CNN)
 
-* Record speed translations
-  * Measure translation time once machine learning system is shown a sentence
+* Measure speed translations
+  * Record the translation time once machine learning system is shown a sentence to quantify results
   * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 English-French task**, a widely used metric for judging the accuracy of machine translation."
   
 * Gating to control flow of hidden-units
 
 * **Multi-Hop Attention** 
-  * CNN encoder creates a vector for each word to be translated
-  * CNN decoder translates the English words while computations are being simultaneously made
+  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates the English words while computations are being simultaneously made
   * Network has two decoder layers and attention is paid to each layer. Refer to image below.
 
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
@@ -66,13 +65,13 @@
 
 # Download Pre-trained French-English Models
 
-**Download model wmt14.en-fr.fconv-cuda/**
+**Download model** wmt14.en-fr.fconv-cuda/
 
 ```python
 $ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | tar xvjf -
 ```
 
-**Translate text with *fairseq generate-lines***
+**Translate text** with *fairseq generate-lines*
 
 ```python
 > Why is it rare to discover new marine mam@@ mal species ?
