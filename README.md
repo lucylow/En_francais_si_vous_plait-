@@ -43,7 +43,7 @@
 * Gating to control flow of hidden-units
 
 * **Multi-Hop Attention** 
-  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates the English words while computations are being simultaneously made
+  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made
   * Network has two decoder layers and attention is paid to each layer. Refer to image below.
 
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
@@ -60,27 +60,6 @@
 * Test sets for model
   * **wmt14.en-fr.newstest2014.tar.bz2:** newstest2014 test set for WMT14 English-French
   * **wmt14.en-fr.ntst1213.tar.bz2:** newstest2012 and newstest2013 test sets for WMT14 English-French
-
----
-
-# Download Pre-trained French-English Models
-
-**Download model** wmt14.en-fr.fconv-cuda/
-
-```python
-$ curl https://s3.amazonaws.com/fairseq/models/wmt14.en-fr.fconv-cuda.tar.bz2 | tar xvjf -
-```
-
-**Translate text** with *fairseq generate-lines*
-
-```python
-> Why is it rare to discover new marine mam@@ mal species ?
-
-Source: Why is it rare to discover new marine mam@@ mal species ?
-Original_Sentence: Why is it rare to discover new marine mam@@ mal species ?
-Hypothesis: -0.068684287369251 Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Attention_Maxima: 1 1 4 4 6 6 7 11 9 9 9 12 13
-```
 
 ---
 
