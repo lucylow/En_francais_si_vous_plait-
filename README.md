@@ -63,15 +63,18 @@
   * Giga
   * News-commentary
   * Undoc
-* Pre-process the French-English WMT 2014 corpus
+* Pre-process WMT2014 text corpus
 
 ```terminal
 bash prepare-iwslt14.sh
+
 TEXT=iwslt14.tokenized.fr-en
 
+# Binarize data
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
+    -workers 60
 ```
 
 ---
@@ -85,7 +88,8 @@ $ mkdir -p trainings/fconv
 
 $ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenized.fr-en \
   -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
-  -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
+  -momentum 0.99 -timeavg -bptt 0 
+  -savedir trainings/fconv
 ```
 
 **Model Generation with *-fairseq generate***
