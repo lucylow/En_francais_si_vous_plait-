@@ -44,9 +44,8 @@ For the English readme documentation, [click here!](https://github.com/lucylow/e
   * Le codeur CNN crée un vecteur pour chaque mot à traduire et le décodeur CNN traduit les mots pendant que les calculs PyTorch sont effectués simultanément
    * **Le réseau a deux couches de décodeur et une attention particulière est accordée à chaque couche.** Voir l'image ci-dessous:
 
-    ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
-
-    *Image de **Calculs tensoriels** à sauts multiples où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
+       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
+        *Image de **Calculs tensoriels** à sauts multiples où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
 
 ---
 ## Traduction Français-Anglais
