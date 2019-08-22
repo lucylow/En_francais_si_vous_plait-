@@ -16,27 +16,28 @@
 
 ## Motivation
 
-* **Linguistic analysis to detect language tones from written text**. 
+* **Linguistic analysis** to detect language tones from written text
 * Learn the tone of customer's communications and responds with an appropriate tone
-* Fairseq Machine Learning Sequence Modeling toolkit in PyTorch
+* Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 
 
 
-## Technical Convolutional Neural Networks
+## Technical Convolutional Neural Networks (CNN)
 
 * Record speed translations
-  * Measure time it takes to get translation once system shown a sentence
+  * Measure translation time once machine learning system is shown a sentence
   * "**The CNN outperforms it by 1.5 BLEU on the WMT 2014 English-French task**, a widely used metric for judging the accuracy of machine translation."
-* Gating to control flow of hidden-units in neural network
+  
+* Gating to control flow of hidden-units
+
 * **Multi-Hop Attention** 
-  * Faster language encoding and decoding 
   * CNN encoder creates a vector for each word to be translated
   * CNN decoder translates the English words while computations are being simultaneously made
-  * Network has two layers in decoder and attention is paid to each layer. Refer to image below where green lines == attention fo each French word.
+  * Network has two decoder layers and attention is paid to each layer. Refer to image below.
 
 ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
-*Image of **Multi-hop Attention computations** from https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation/.*
+*Image of **Multi-hop Attention** computations from [here](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) where green lines represent attention paid to each French word.*
 
 ---
 
