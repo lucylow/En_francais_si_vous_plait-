@@ -48,7 +48,7 @@
 
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
-       *Image of **Multi-hop Attention** tensor computations from [here](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) where green lines represent attention paid to each French word.*
+       *Image of **Multi-hop Attention** tensor computations where green lines represent attention paid to each French word. [Image Source](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
 
 ---
 
@@ -60,14 +60,14 @@
 cd data/
 bash prepare-iwslt14.sh
 cd ..
-TEXT=data/iwslt14.tokenized.fe-en
+TEXT=data/iwslt14.tokenized.fr-en
 
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
 ```
 
-**Train new CNN model with *fairseq train***
+**Train new CNN model with *-fairseq train***
 
 ```python
 $ mkdir -p trainings/fconv
@@ -76,7 +76,7 @@ $ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenize
   -momentum 0.99 -timeavg -bptt 0 -savedir trainings/fconv
 ```
 
-**Model Generation with *fairseq generate***
+**Model Generation with *-fairseq generate***
 
 ```python
 $ DATA=data-bin/iwslt14.tokenized.fe-en
