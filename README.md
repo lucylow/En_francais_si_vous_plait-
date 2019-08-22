@@ -1,7 +1,5 @@
 # En français si vous plait? 🇨🇦
 
----
-
 Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
 
 <div>
@@ -12,6 +10,8 @@ Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en
   [![License](https://img.shields.io/bower/l/bootstrap)]()
 
 </div>
+
+This is a **machine learning project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. French-English linguistic analysis to detect language tones from written text on document and sentence levels.
 
 ---
 
