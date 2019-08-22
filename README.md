@@ -24,19 +24,15 @@
 ---
 
 ## French-English Examples
-1. masculine “the” (le) vs feminine “the” (la)
-2. masculine “a” (un) vs feminine “a” (une)
-3. masculine "du" vs feminine “de la”
-4. masculine "knife" vs feminine "fork"
-5. masculine "madame le ministre" vs feminine "madame la ministre"
-6. masculine "directeur" vs feminine "directrice" **but mixed genders is "directeurs"**
-7. passé composé tense: 
-    * je suis allé(e) 
-    * tu es allé(e) 
-    * il/elle est allé(e) 
-    * nous sommes allé(e)s 
-    * vous êtes allé(e)(s) 
-    * ils/elles sont allé(e)s
+* Masculine “the” (le) vs feminine “the” (la)
+* Nasculine “a” (un) vs feminine “a” (une)
+* Passé composé tense: 
+  * Je suis allé(e) 
+  * Tu es allé(e) 
+  * Il/elle est allé(e) 
+  * Nous sommes allé(e)s 
+  * Vous êtes allé(e)(s) 
+  * Ils/elles sont allé(e)s
     
 ---  
 
