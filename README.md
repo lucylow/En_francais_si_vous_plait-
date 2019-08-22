@@ -17,9 +17,8 @@
 ## Motivation
 
 * **Linguistic analysis** to detect language tones from written text
-* Learn the tone of customer's communications and responds with an appropriate tone
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
-
+* Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
 
 ## Technical Convolutional Neural Networks (CNN)
