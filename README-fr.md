@@ -1,6 +1,7 @@
 # En français si vous plait? 🇨🇦
 
-** Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon! # PTSH19] (https://pytorch.devpost.com/) **. For the English readme documentation, [click here!] (Https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
+**Ceci est une soumission de projet d'apprentissage automatique pour le [Global PyTorch Summer Hackathon! # PTSH19] (https://pytorch.devpost.com/)**. 
+For the English readme documentation, [click here!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README.md)
 
 <div>
   
@@ -12,107 +13,109 @@
 
 ---
 
-## Motivation
+## Motivational
 
-* Mise en œuvre de la boîte à outils ** de Fairseq, Machine Learning Sequence Modeling, dans PyTorch **
-* Modèle de transformateur de traduction en langage machine de [* L'attention est tout ce dont vous avez besoin *] (https://arxiv.org/abs/1706.03762)
+* Mise en œuvre de la boîte à outils **de Fairseq, Machine Learning Sequence Modeling, dans PyTorch**
+* Modèle de transformateur de traduction en langage machine de [*L'attention est tout ce dont vous avez besoin*](https://arxiv.org/abs/1706.03762)
 * Applications métier pour connaître le ton des communications du client et répondre avec un ton approprié
 
     
 ---
 
-## Outils techniques
+## Outils Techniques
 
-* [** Pytorch **] (https://pytorch.org)
+* [**Pytorch**](https://pytorch.org)
   * Plateforme de recherche en apprentissage en profondeur offrant une flexibilité et une vitesse maximales ainsi que des tenseurs basés sur le processeur graphique accélérant le calcul
   
-* [** Fairseq de Facebook Research **]] (https://ai.facebook.com/tools/fairseq/)
+* [**Fairseq de Facebook Research**]](https://ai.facebook.com/tools/fairseq/)
   * Boîte à outils de modélisation de séquence écrite en PyTorch
-  * Former des modèles personnalisés pour ** traduction neuronale (NMT) ** - traduction, synthèse, modélisation de langage et autres tâches de génération de texte
+  * Former des modèles personnalisés pour **traduction neuronale** - traduction, synthèse, modélisation de langage et autres tâches de génération de texte
  
 
 ---
 
-## Modélisation séquence par séquence du transformateur convolutionnel
+## Transformateur Convolutionnel
 
 * Mesurer les traductions de vitesse
-  * Enregistrez le temps de traduction une fois que le système d'apprentissage machine affiche une phrase pour quantifier les résultats
-  * "** CNN le surpasse de 1,5 BLEU pour la tâche français-anglais du WMT 2014 **, une métrique largement utilisée pour juger de l'exactitude de la traduction automatique."
+  * Enregistrez le temps de traduction une fois que le système d'apprentissage machine affiche une phrase pour quantifier les résultats
+  * "**CNN le surpasse de 1,5 BLEU pour la tâche français-anglais du WMT 2014**, une métrique largement utilisée pour juger de l'exactitude de la traduction automatique."
   
 * Gating pour contrôler le flux d'unités cachées
 
-* ** Attention multi-hop **
-  * Le codeur CNN crée un vecteur pour chaque mot à traduire et le décodeur CNN traduit les mots pendant que les calculs PyTorch sont effectués simultanément
-  * ** Le réseau a deux couches de décodeur et une attention particulière est accordée à chaque couche. ** Voir l'image ci-dessous.
+* **Attention multi-hop**
+  * Le codeur CNN crée un vecteur pour chaque mot à traduire et le décodeur CNN traduit les mots pendant que les calculs PyTorch sont effectués simultanément
+   * **Le réseau a deux couches de décodeur et une attention particulière est accordée à chaque couche.** Voir l'image ci-dessous.
 
-   ! [alt text bonjour] (https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
+   ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
-   * Image de ** Calculs tensoriels ** à sauts multiples ** où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image] (https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation) *
+   *Image de **Calculs tensoriels **à sauts multiples où les lignes vertes représentent l'attention portée à chaque mot français. [Source d'image](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
 
 
 ---
  
-## Jeu de données de traduction français-anglais
+## Traduction Français-Anglais
 
-* Traduction automatique statistique [WMT 2014 français-anglais] (http://statmt.org/wmt14/translation-task.html#Download) avec ** phrases d'une taille de corpus de 2,3 Go et 40,8 millions **
+* Traduction automatique statistique [WMT 2014 Français-Anglais](http://statmt.org/wmt14/translation-task.html#Download) avec **phrases d'une taille de corpus de 2,3 Go et 40,8 millions**
+
 * Le jeu de données comprend:
-  * Commoncrawl
-  * Europarl-v7
-  * Giga
-  * Nouvelles-commentaires
-  * Undoc
+  * Commoncrawl
+  * Europarl-v7
+  * Giga
+  * Nouvelles-commentaires
+  * Undoc
+
 * Pré-traitement du corpus de texte WMT2014
 
-`` `terminal
-données cd /
+```terminal
+cd data/
 bash prepare-iwslt14.sh
 
-TEXT = data / iwslt14.tokenized.fr-fr
+TEXT=data/iwslt14.tokenized.fr-en
 
 # Binarize data
 $ fairseq preprocess -sourcelang fr -targetlang en \
-    -trainpref $ TEXT / train -validpref $ TEXT / valide -testpref $ TEXT / test \
-    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin / iwslt14.tokenized.fr-en
-    travailleurs 60
-`` `
+    -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
+    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
+    -workers 60
+```
 
 ---
 
-## Formation technique sur le modèle français-anglais
+## Formation Technique sur le Modèle Français-Anglais
 
-** Former le nouveau modèle CNN avec le train * -fairseq ***
+**Former le nouveau modèle CNN avec le train *-fairseq***
 
-`` `python
-$ mkdir -p trainings / fconv
+```python
+$ mkdir -p trainings/fconv
 
-$ fairseq train -sourcelang fr -targetlang en -datadir data-bin / iwslt14.tokenized.fr-en \
-  -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
-  -momentum 0,99 -timeavg -bptt 0
-  -savedir formations / fconv
-`` `
+$ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenized.fr-en \
+  -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
+  -momentum 0.99 -timeavg -bptt 0 
+  -savedir trainings/fconv
+```
 
-** La génération de modèle avec * -fairseq génère ***
+**La Génération de Modèle avec *-fairseq génère***
 
-`` `python
-$ DATA = data-bin / iwslt14.tokenized.fr-en
+```python
+$ DATA=data-bin/iwslt14.tokenized.fr-en
 
-$ fairseq generate-lines -sourcedict $ DATA / dict.fr.th7 -targetdict $ DATA / dict.en.th7 \
-  -path trainings / fconv / model_best_opt.th7 -beam 10 -nbest
-| [cible] Dictionnaire: 24738 types
-| Dictionnaire [source]: 35474 types
+$ fairseq generate-lines -sourcedict $DATA/dict.fr.th7 -targetdict $DATA/dict.en.th7 \
+  -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 
+| [target] Dictionary: 24738 types
+| [source] Dictionary: 35474 types
 
-> Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
+> Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
 
-Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
-Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins?
-Hypothèse: -0.23804219067097 Pourquoi est-il rare de découvrir de nouvelles espèces marines mam @@ mal?
+Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+Hypothesis:-0.23804219067097 Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima: 2 2 3 4 5 6 7 8 9
-Hypothèse: -0.23861141502857 Pourquoi est-il rare de découvrir de nouvelles espèces marines mam @@ mal?
+Hypothesis:-0.23861141502857 Why is it rare to discover new marine mam@@ mal species ?
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
-`` `
+```
 ---
 
-## Modèles techniques et ensembles de test
+## Modèles Techniques et Ensembles de Test
 
 * Modèle entièrement pré-entrainé
   * ** wmt14.en-fr.fconv-cuda.tar.bz2: ** Modèle pré-formé pour le WMT14 anglais-français, y compris les vocabulaires
@@ -125,6 +128,10 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ---
 
 ## Références
+https://ai.facebook.com/tools/fairseq/
+Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
+"FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
+"Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
+"Attention Is All You Need" https://arxiv.org/abs/1706.03762
+Data processing scripts: https://www.dagshub.com/Guy/fairseq/src/67af40c9cca0241d797be13ae557d59c3732b409/data
 
-* https://ai.facebook.com/tools/fairseq/
-* Document technique Fairseq
