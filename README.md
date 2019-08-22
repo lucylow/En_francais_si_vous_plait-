@@ -17,7 +17,7 @@
 ## Motivation
 
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
-* Neural Network machine translation converting text from source language into matching text in a target language
+* Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762)
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
     
@@ -30,11 +30,12 @@
   
 * [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
-  * Train custom models for translation, summarization, language modeling, and other text generation tasks
+  * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
  
 --- 
  
 ## French-English Translation Dataset
+
 * Statistcal machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 40.8M sentences**
 * Dataset includes:
   * Commoncrawl
@@ -45,7 +46,7 @@
 
 --- 
 
-## Deep Learning - Convolutional Neural Networks (CNN)
+## Convolutional Transformer Sequence-to-Sequence Modeling 
 
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
