@@ -33,8 +33,7 @@
   * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
 
 * [**Transformer Machine Learning Model**](https://arxiv.org/pdf/1706.03762.pdf)
-  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs]
-  * Requires sequence-aligned RNNs or CNNs
+  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs] - requires sequence-aligned RNNs or CNNs
   
       ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
@@ -70,12 +69,14 @@
 ## French-English Translation Dataset
 
 * Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**
-* The dataset is too big to include in *En_francais_si_vous_plait-* repo. User needs to  download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt.
-* In French-English translations, sequence prediction is the best model since, words can have different order - "chat noir" vs "black cat" and words can also be added - "not" vs "ne/pas. Refer to image below:
+* Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
+* For French-English translations, order of words matter and and the number of words can be added during the translation.
+  * Ex1 "chat noir" vs "black cat" 
+  * Ex2 "not" vs "ne ___ pas"
 
     ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
     
-    *Image of sentence sequence prediction.[Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
+    *Image of **sentence sequence prediction**.[Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
     
 * Dataset includes:
   * Commoncrawl
