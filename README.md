@@ -153,4 +153,5 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
 * "Attention Is All You Need" https://arxiv.org/abs/1706.03762
 * Data processing scripts: https://www.dagshub.com/Guy/fairseq/src/67af40c9cca0241d797be13ae557d59c3732b409/data
+* Beyond "How May I Help You?": https://medium.com/airbnb-engineering/beyond-how-may-i-help-you-fd6a0d385d02
 
