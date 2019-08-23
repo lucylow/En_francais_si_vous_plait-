@@ -74,12 +74,7 @@
     
     *Image of **sentence sequence prediction**. [Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
     
-* Dataset includes:
-  * Commoncrawl
-  * Europarl-v7
-  * Giga
-  * News-commentary
-  * Undoc
+* Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 * Pre-process WMT2014 text corpus
 
 ```terminal
@@ -140,19 +135,6 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
   ![attention matrix](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
   
   *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
-
-
----
-
-##  Technical Models and Test Sets
-
-* Fully pretrained model
-  * **wmt14.en-fr.fconv-cuda.tar.bz2:** Pre-trained model for WMT14 English-French including vocabularies
-  
-* Test sets for model
-  * **wmt14.en-fr.newstest2014.tar.bz2:** newstest2014 test set for WMT14 English-French
-  * **wmt14.en-fr.ntst1213.tar.bz2:** newstest2012 and newstest2013 test sets for WMT14 English-French
-
 
 ---
 
