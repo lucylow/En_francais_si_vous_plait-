@@ -26,7 +26,7 @@
 ## Technical Tools
 
 * [**Pytorch**](https://pytorch.org) 
-  * Deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
+  * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
   
 * [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
