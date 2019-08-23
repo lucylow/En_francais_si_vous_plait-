@@ -38,7 +38,7 @@
   
       ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
-    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.*
+    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
 
  
 --- 
@@ -51,7 +51,7 @@
   
      ![alt text](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
      
-     *Image. Transformer model high in BLEU scale and low on training costs*
+     *Image. Transformer model high in BLEU scale and low on training costs [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
   
 * Gating to control flow of hidden-units
   
@@ -73,7 +73,7 @@
 
     ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20self-attention%20encoder%20sentence%20structure.png)
     
-    *Image of sentence structures in the self-attention encoder-decoder model*
+    *Image of sentence structures in the self-attention encoder-decoder model [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
 
 * Dataset includes:
   * Commoncrawl
