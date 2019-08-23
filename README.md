@@ -20,10 +20,6 @@
 * Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) using encoder-decoder attention mechanisms in a sequence-to-sequence model - the encoder-decoder architecture features stacked self-attention layers
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
-    ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
-
-    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. For full technical documentation, [paper here](https://arxiv.org/pdf/1706.03762.pdf).*
-
 
 ---  
 
@@ -35,15 +31,19 @@
 * [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
- 
 
+* **Transformer Machine Learning Model**
+  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs]
+  * Requires sequence-aligned RNNs or CNNs
+  
+      ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
+
+    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. For full technical documentation, [paper here](https://arxiv.org/pdf/1706.03762.pdf).*
+
+ 
 --- 
 
 ## Convolutional Self-Attention Transformer Modelling 
-
-* Transformer model
-  * Transduction machine learning model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs]
-  * Requires sequence-aligned RNNs or CNNs
   
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
