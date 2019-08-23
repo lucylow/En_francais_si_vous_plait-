@@ -17,7 +17,7 @@
 ## Motivation
 
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
-* Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) using encoder-decoder attention mechanisms in a sequence-to-sequence model - the encoder-decoder architecture features stacked self-attention layers
+* Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms in a sequence-to-sequence model** that features stacked self attention layers
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
 
