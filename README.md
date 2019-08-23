@@ -113,13 +113,13 @@ $ fairseq generate-lines -sourcedict $DATA/dict.fr.th7 -targetdict $DATA/dict.en
 | [target] Dictionary: 24738 types
 | [source] Dictionary: 35474 types
 
-> Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
+> Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
 
-Source: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Original_Sentence: Pourquoi est-il rare de découvrir de nouvelles espèces de mammifères marins ?
-Hypothesis:-0.23804219067097 Why is it rare to discover new marine mam@@ mal species ?
+Source: Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
+Original_Sentence: Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
+Hypothesis:-0.23804219067097 People never believe others capable of doing that which they themselves are not capable of doing.
 Attention_Maxima: 2 2 3 4 5 6 7 8 9
-Hypothesis:-0.23861141502857 Why is it rare to discover new marine mam@@ mal species ?
+Hypothesis:-0.23861141502857 People never believe others capable of doing that which they themselves are not capable of doing.
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
 ---
