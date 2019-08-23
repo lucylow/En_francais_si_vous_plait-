@@ -1,3 +1,4 @@
-PyTorch version >= 1.1.0
-Python version >= 3.5
+PyTorch version>=1.1.0
+Python version>=3.5
+Cython==0.29.13
 NVIDIA GPU
