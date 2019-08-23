@@ -139,13 +139,7 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ## Visualizing Attention 
 
 * **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation 
-* Use matplotlib library to display matrix *plt.matshow(attentions)* :
-
-```python 
-import matplotlib.pyplot as plt
-
-evaluateAndShowAttention("je ne crains pas de mourir .")
-```
+* Use matplotlib library to display matrix via *plt.matshow(attention)* :
 
   ![attention matrix](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
   
@@ -171,6 +165,7 @@ evaluateAndShowAttention("je ne crains pas de mourir .")
 * https://ai.facebook.com/tools/fairseq/
 * Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
 * "FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling" https://arxiv.org/pdf/1904.01038.pdf
+* Neural Machine Translation by Jointly Learning to Align and Translate https://arxiv.org/abs/1409.0473
 * Translation with Sequence to Sequence Network and Attention https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
 * "Attention Is All You Need" https://arxiv.org/abs/1706.03762
