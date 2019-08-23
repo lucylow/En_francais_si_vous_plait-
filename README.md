@@ -17,12 +17,12 @@
 ## Motivation
 
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
-* Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) using encoder-decoder attention mechanisms in a sequence-to-sequence model
+* Machine language translation transformer model from [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) using encoder-decoder attention mechanisms in a sequence-to-sequence model - the encoder-decoder architecture features stacked self-attention layers
 * Business applications to learn the tone of customer's communications and responds with an appropriate tone
 
     ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
-    *Image of Transformer model. The encoder-decoder architecture features stacked self-attention and fully-connected (fc) layers. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. For full technical documentation, [refer to the paper](https://arxiv.org/pdf/1706.03762.pdf).*
+    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. For full technical documentation, [paper here](https://arxiv.org/pdf/1706.03762.pdf).*
 
 
 ---  
@@ -42,8 +42,7 @@
 ## Convolutional Self-Attention Transformer Modelling 
 
 * Transformer model
-  * Transduction machine learning model relying on **self-attention layers to compute input and output represenations**
-  * Attention function maps [query, key-value pairs] to a vector-output of query, keys, and values.
+  * Transduction machine learning model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs]
   * Requires sequence-aligned RNNs or CNNs
   
 * Measure speed translations
@@ -51,14 +50,13 @@
   * "On the **WMT 2014 English-to-French translation task** (a widely used metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
   
      ![alt text](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
+     
      *Image. Transformer model high in BLEU scale and low on training costs*
   
-  
 * Gating to control flow of hidden-units
-
-* Self attention Layers - where all the keys, value, sand queries come from the same input
   
 * **Multi-Hop Attention Functionality** 
+  * Self attention layers - where all the keys, values, and queries come from the same input
   * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made
   * **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
@@ -74,6 +72,8 @@
 * Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**
 
     ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20self-attention%20encoder%20sentence%20structure.png)
+    
+    *Image of sentence structures in the self-attention encoder-decoder model*
 
 * Dataset includes:
   * Commoncrawl
