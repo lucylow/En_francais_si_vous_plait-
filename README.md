@@ -70,11 +70,13 @@
 ## French-English Translation Dataset
 
 * Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**
+* The dataset is too big to include in *En_francais_si_vous_plait-* repo. User needs to  download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt.
+* In French-English translations, sequence prediction is the best model since, words can have different order - "chat noir" vs "black cat" and words can also be added - "not" vs "ne/pas. Refer to image below:
 
-    ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/The%20self-attention%20encoder%20sentence%20structure.png)
+    ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
     
-    *Image of sentence structures in the self-attention encoder-decoder model [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
-
+    *Image of sentence sequence prediction.[Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
+    
 * Dataset includes:
   * Commoncrawl
   * Europarl-v7
@@ -122,15 +124,36 @@ $ fairseq generate-lines -sourcedict $DATA/dict.fr.th7 -targetdict $DATA/dict.en
 | [target] Dictionary: 24738 types
 | [source] Dictionary: 35474 types
 
-> Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
+> Je ne crains pas de mourir.
 
-Source: Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
-Original_Sentence: Les homes ne croient jamais les autres capables de ce qu'ils ne le sont pas eux-mêmes.
-Hypothesis:-0.23804219067097 People never believe others capable of doing that which they themselves are not capable of doing.
+Source: Je ne crains pas de mourir.
+Original_Sentence: Je ne crains pas de mourir.
+Hypothesis:-0.23804219067097 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 6 7 8 9
-Hypothesis:-0.23861141502857 People never believe others capable of doing that which they themselves are not capable of doing.
+Hypothesis:-0.23861141502857 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ```
+
+---
+
+## Visualizing Attention 
+
+Step by step visualization of the encoder-decoder network's **"attention output" as it goes through a sequence using matplotlib library**. Display matrix using *plt.matshow(attentions)* :
+
+'''python 
+import matplotlib.pyplot as plt
+.
+.
+.
+evaluateAndShowAttention("je ne crains pas de mourir .")
+
+'''
+
+  ![attention matrix](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention%20matrix.png)
+  
+  *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
+
+
 ---
 
 ##  Technical Models and Test Sets
