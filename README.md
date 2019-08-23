@@ -32,8 +32,8 @@
   * Sequence modeling toolkit written in PyTorch
   * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
 
-* [**Transformer Machine Learning Model**](https://arxiv.org/pdf/1706.03762.pdf)
-  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector-outputs of [query, key-value pairs] - requires sequence-aligned RNNs or CNNs
+* [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
+  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
   
       ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
@@ -56,8 +56,7 @@
   
 * **Multi-Hop Attention Functionality** 
   * Self attention layers - where all the keys, values, and queries come from the same input
-  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made
-  * **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
+  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
       ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
@@ -68,8 +67,7 @@
  
 ## French-English Translation Dataset
 
-* Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**
-* Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
+* Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**. Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation.
   * Ex1 "chat noir" vs "black cat" 
   * Ex2 "not" vs "ne ___ pas"
