@@ -15,13 +15,38 @@
 ---
 
 ## Motivation
-
+* French-English translation service using **natural language processing (NLP)** with a vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
+* As a Canadaian citizen, ensure respect for **English and French as the offical languages of Canada** and that they have **equality** of status, rights, and privileges
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 * Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms in a sequence-to-sequence model** that features stacked self attention layers
-* Business applications to learn the tone of customer's communications and responds with an appropriate tone
-
 
 ---  
+
+## Natural Language Processing (NLP)
+* Sub-field in **Artifical Intelligence using machine learning and artifical neural networks** 
+* Ability of a machine to analyse, understand, and generate human speech
+* Natural languages
+  * **Languages that are native to people**
+  * Ex: English, French, or Mandarin
+* Artificial languages
+  * **Languages that computers can operate on**
+  * Ex: Python, Java, or C++ 
+
+---
+
+## Applications in Market Opportunity 
+* **Customer Service**
+  * Chatbots taking over repetitive **easy-to-automate human jobs**
+  * Ex: Bank tellers, cashiers, or sales associates
+* **Legal Industry**
+  * NLP used to **automate or summarize** long and mundane documents
+  * Ex: One legal case has an average of 400-500 pages 
+* **Financial Industry**
+  * **Reduce the manual processing** required to retrive corporate data
+  * Ex: Information from financial reports, press releases, or news articles
+
+
+---
 
 ## Technical Tools
 
@@ -138,10 +163,17 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 
 ---
 
+### What's next 
+* Transcribe French and English audio and video recorded material into French and perform any other related language services
+
+![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
+
+
 ## References
 
 * "Attention Is All You Need" https://arxiv.org/abs/1706.03762
 * Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
+* Canada's Offical Languages Act https://laws-lois.justice.gc.ca/eng/acts/o-3.01/page-1.html
 * Translation with Sequence to Sequence Network and Attention https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py
 * "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
 * Data processing scripts: https://www.dagshub.com/Guy/fairseq/src/67af40c9cca0241d797be13ae557d59c3732b409/data
