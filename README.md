@@ -20,6 +20,9 @@
 * Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
 * Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms in a sequence-to-sequence model** that features stacked self attention layers
 
+![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
+*Image from grade school Lucy Low*
+
 ---  
 
 ## Natural Language Processing (NLP)
@@ -166,7 +169,6 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ### What's next 
 * Transcribe French and English audio and video recorded material into French and perform any other related language services
 
-![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
 
 
 ## References
