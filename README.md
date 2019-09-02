@@ -176,11 +176,12 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 
 ## References
 
-* "Attention Is All You Need" https://arxiv.org/abs/1706.03762
+* "Attention Is All You Need": https://arxiv.org/abs/1706.03762
 * Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
 * Canada's Offical Languages Act https://laws-lois.justice.gc.ca/eng/acts/o-3.01/page-1.html
-* Translation with Sequence to Sequence Network and Attention https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py
-* "Convolutional Sequence to Sequence Learning" https://arxiv.org/abs/1705.03122
+* IBM's PyTorch seq-to-seq model:https://github.com/IBM/pytorch-seq2seq
+* Translation with Sequence to Sequence Network and Attention: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py
+* "Convolutional Sequence to Sequence Learning": https://arxiv.org/abs/1705.03122
 * Data processing scripts: https://www.dagshub.com/Guy/fairseq/src/67af40c9cca0241d797be13ae557d59c3732b409/data
 * Beyond "How May I Help You?": https://medium.com/airbnb-engineering/beyond-how-may-i-help-you-fd6a0d385d02
 
