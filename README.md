@@ -1,6 +1,7 @@
 # En français si vous plait?
 
-**This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
+**This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**. Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms** in a **sequence-to-sequence model** that features stacked self attention layers
+ Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
 
 <div>
   
@@ -15,10 +16,9 @@
 ---
 
 ## Motivation
-* French-English translation service using **natural language processing (NLP)** with a vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
-* As a Canadaian citizen, ensure respect for **English and French as the offical languages of Canada** and that they have **equality** of status, rights, and privileges
-* Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**
-* Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms in a sequence-to-sequence model** that features stacked self attention layers
+* French-English translation service using **natural language processing (NLP)** 
+* Vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
+* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have **equality** of status, rights, and privileges
 
   ![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
 
