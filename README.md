@@ -1,7 +1,7 @@
 # En français si vous plait?
 
-**This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Implementation of **Fairseq's Machine Learning Sequence Modeling toolkit in PyTorch**. Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms** in a **sequence-to-sequence model** that features stacked self attention layers
- Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
+**This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
+
 
 <div>
   
@@ -54,6 +54,7 @@
 
 ## Technical Tools
 
+
 * [**Pytorch**](https://pytorch.org) 
   * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
   
@@ -62,6 +63,7 @@
   * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
 
 * [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
+  * Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms** in a **sequence-to-sequence model** that features stacked self attention layers
   * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
   
       ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
