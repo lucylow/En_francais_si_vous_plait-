@@ -18,11 +18,11 @@
 ## Language Barrier Motivation
 * French-English translation service using **natural language processing (NLP)** 
 * Vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
-* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have **equality** of status, rights, and privileges
+* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have **equality of status, rights, and privileges**
 
   ![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
 
-  *Image from grade school Lucy Low*
+  *Image from grade school Lucy Low :)*
 
 ---  
 
