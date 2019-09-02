@@ -18,7 +18,7 @@
 ## Language Barrier Motivation
 * French-English translation service using **natural language processing (NLP)** 
 * Vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
-* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have **equality of status, rights, and privileges**
+* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and hfave **equality of status, rights, and privileges**
 
   ![ma famille](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/ma%20famille.png)
 
@@ -77,7 +77,7 @@
   
 * Measure speed translations
   * Record the translation time once machine learning system is shown a sentence to quantify results
-  * "On the **WMT 2014 English-to-French translation task** (a widely used metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
+  * "On the **WMT 2014 English-to-French translation task** (a widely used **benchmark metric** for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
   
      ![alt text](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
      
@@ -98,7 +98,7 @@
  
 ## French-English Translation Dataset
 
-* Statistical machine translation [WMT 2014 French-English](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**. Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
+* Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**. Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
     ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
