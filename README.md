@@ -169,11 +169,6 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 
 ---
 
-### What's next 
-* Transcribe French and English audio and video recorded material into French and perform any other related language services
-
-
-
 ## References
 
 * "Attention Is All You Need": https://arxiv.org/abs/1706.03762
