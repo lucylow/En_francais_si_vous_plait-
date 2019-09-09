@@ -20,6 +20,21 @@
 * Vision of **connecting people through language** and advancing a **barrier free society for billingual speakers**
 * As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and hfave **equality of status, rights, and privileges**
 
+
+---
+
+## Applications & Market Opportunities
+* **Customer Service**
+  * Chatbots taking over repetitive **easy-to-automate human jobs**
+  * Ex: Bank tellers, cashiers, or sales associates
+* **Legal Industry**
+  * NLP used to **automate or summarize** long and mundane documents
+  * Ex: One legal case has an average of 400-500 pages 
+* **Financial Industry**
+  * **Reduce the manual processing** required to retrive corporate data
+  * Ex: Information from financial reports, press releases, or news articles
+
+
 ---  
 
 ## Natural Language Processing (NLP)
@@ -32,24 +47,10 @@
   * **Languages that computers can operate on**
   * Ex: Python, Java, or C++ 
 
----
-
-## Applications in Market Opportunity 
-* **Customer Service**
-  * Chatbots taking over repetitive **easy-to-automate human jobs**
-  * Ex: Bank tellers, cashiers, or sales associates
-* **Legal Industry**
-  * NLP used to **automate or summarize** long and mundane documents
-  * Ex: One legal case has an average of 400-500 pages 
-* **Financial Industry**
-  * **Reduce the manual processing** required to retrive corporate data
-  * Ex: Information from financial reports, press releases, or news articles
-
 
 ---
 
 ## Technical Tools
-
 
 * [**Pytorch**](https://pytorch.org) 
   * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
