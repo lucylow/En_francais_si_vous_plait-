@@ -102,7 +102,10 @@
     *Image of **sentence sequence prediction**. [Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
     
 * Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
-* Pre-process WMT2014 text corpus
+
+----
+
+## Pre-Process the WMT2014 Text Data
 
 ```terminal
 cd data/
