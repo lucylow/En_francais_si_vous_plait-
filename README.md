@@ -1,6 +1,6 @@
 # En français si vous plait?
 
-!pytorch banner](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/pytorch%20banner.png)
+![pytorch banner](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/pytorch%20banner.png)
 
 **This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
 
