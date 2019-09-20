@@ -1,183 +1,127 @@
-# En français si vous plait?
+# <img src="fairseq_logo.png" width="30"> Introduction
 
-![pytorch banner](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/pytorch%20banner.png)
+Fairseq(-py) is a sequence modeling toolkit that allows researchers and
+developers to train custom models for translation, summarization, language
+modeling and other text generation tasks.
 
-**This is a machine learning natural language processing (NLP) project submission for the [Global PyTorch Summer Hackathon! #PTSH19](https://pytorch.devpost.com/)**. Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/en_francais_si_vous_plait-/blob/master/README-fr.md)
+### What's New:
 
+- August 2019: [WMT'19 models released](examples/wmt19/README.md)
+- July 2019: fairseq relicensed under MIT license
+- July 2019: [RoBERTa models and code released](examples/roberta/README.md)
+- June 2019: [wav2vec models and code released](examples/wav2vec/README.md)
 
-<div>
-  
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait-.svg)](https://github.com/lucylow/en_francais_si_vous_plait-/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait-.svg)](https://github.com/lucylow/en_francais_si_vous_plait-/pulls)
-  [![License](https://img.shields.io/bower/l/bootstrap)]()
+### Features:
 
-</div>
+Fairseq provides reference implementations of various sequence-to-sequence models, including:
+- **Convolutional Neural Networks (CNN)**
+  - [Language Modeling with Gated Convolutional Networks (Dauphin et al., 2017)](examples/language_model/conv_lm/README.md)
+  - [Convolutional Sequence to Sequence Learning (Gehring et al., 2017)](examples/conv_seq2seq/README.md)
+  - [Classical Structured Prediction Losses for Sequence to Sequence Learning (Edunov et al., 2018)](https://github.com/pytorch/fairseq/tree/classic_seqlevel)
+  - [Hierarchical Neural Story Generation (Fan et al., 2018)](examples/stories/README.md)
+  - [wav2vec: Unsupervised Pre-training for Speech Recognition (Schneider et al., 2019)](examples/wav2vec/README.md)
+- **LightConv and DynamicConv models**
+  - [Pay Less Attention with Lightweight and Dynamic Convolutions (Wu et al., 2019)](examples/pay_less_attention_paper/README.md)
+- **Long Short-Term Memory (LSTM) networks**
+  - Effective Approaches to Attention-based Neural Machine Translation (Luong et al., 2015)
+- **Transformer (self-attention) networks**
+  - Attention Is All You Need (Vaswani et al., 2017)
+  - [Scaling Neural Machine Translation (Ott et al., 2018)](examples/scaling_nmt/README.md)
+  - [Understanding Back-Translation at Scale (Edunov et al., 2018)](examples/backtranslation/README.md)
+  - [Adaptive Input Representations for Neural Language Modeling (Baevski and Auli, 2018)](examples/language_model/transformer_lm/README.md)
+  - [Mixture Models for Diverse Machine Translation: Tricks of the Trade (Shen et al., 2019)](examples/translation_moe/README.md)
+  - [RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., 2019)](examples/roberta/README.md)
+  - [Facebook FAIR's WMT19 News Translation Task Submission (Ng et al., 2019)](examples/wmt19/README.md)
 
+**Additionally:**
+- multi-GPU (distributed) training on one machine or across multiple machines
+- fast generation on both CPU and GPU with multiple search algorithms implemented:
+  - beam search
+  - Diverse Beam Search ([Vijayakumar et al., 2016](https://arxiv.org/abs/1610.02424))
+  - sampling (unconstrained, top-k and top-p/nucleus)
+- large mini-batch training even on a single GPU via delayed updates
+- mixed precision training (trains faster with less GPU memory on [NVIDIA tensor cores](https://developer.nvidia.com/tensor-cores))
+- extensible: easily register new models, criterions, tasks, optimizers and learning rate schedulers
 
----
+We also provide [pre-trained models](#pre-trained-models-and-examples) for several benchmark
+translation and language modeling datasets.
 
-## Language Barrier Motivation
-* French-English translation service using natural language processing (NLP) with a vision of connecting people through language and advancing a **barrier free society for billingual speakers**
-* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have equality of status, rights, and privileges
+![Model](fairseq.gif)
 
+# Requirements and Installation
 
----
+* [PyTorch](http://pytorch.org/) version >= 1.1.0
+* Python version >= 3.5
+* For training new models, you'll also need an NVIDIA GPU and [NCCL](https://github.com/NVIDIA/nccl)
+* **For faster training** install NVIDIA's [apex](https://github.com/NVIDIA/apex) library with the `--cuda_ext` option
 
-## Applications & Market Opportunities
-* **Customer Service**
-  * Chatbots taking over repetitive **easy-to-automate human jobs**
-  * Ex: Bank tellers, cashiers, or sales associates
-* **Legal Industry**
-  * NLP used to **automate or summarize** long and mundane documents
-  * Ex: One legal case has an average of 400-500 pages 
-* **Financial Industry**
-  * **Reduce the manual processing** required to retrive corporate data
-  * Ex: Information from financial reports, press releases, or news articles
-
-
----  
-
-## Natural Language Processing (NLP)
-* Sub-field in **Artifical Intelligence using machine learning and artifical neural networks** 
-* Ability of a machine to analyse, understand, and generate human speech
-* Natural languages
-  * **Languages that are native to people**
-  * Ex: English, French, or Mandarin
-* Artificial languages
-  * **Languages that computers can operate on**
-  * Ex: Python, Java, or C++ 
-
-
----
-
-## Technical Tools
-
-* [**Pytorch**](https://pytorch.org) 
-  * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
-  
-* [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/) 
-  * Sequence modeling toolkit written in PyTorch
-  * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
-
-* [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
-  * Machine language translation transformer model from [***Attention Is All You Need***](https://arxiv.org/abs/1706.03762) using **encoder-decoder attention mechanisms** in a **sequence-to-sequence model** that features stacked self attention layers
-  * Transduction model relying on **self-attention layers to compute input and output represenations** where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
-  
-      ![transformer model](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
-
-    *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
-
- 
---- 
-
-## Convolutional Self-Attention Transformer Modelling 
-  
-* Measure speed translations
-  * Record the translation time once machine learning system is shown a sentence to quantify results
-  * "On the **WMT 2014 English-to-French translation task** (a widely used **benchmark metric** for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
-  
-     ![alt text](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
-     
-     *Image. Transformer model high in BLEU scale and low on training costs [Image Source](https://arxiv.org/pdf/1706.03762.pdf)*
-  
-* Gating to control flow of hidden-units
-  
-* **Multi-Hop Attention Functionality** 
-  * Self attention layers - where all the keys, values, and queries come from the same input
-  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
-
-      ![alt text bonjour](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
-
-       *Image of **Multi-hop Attention** tensor computations where green lines represent attention paid to each French word. [Image Source](https://engineering.fb.com/ml-applications/a-novel-approach-to-neural-machine-translation)*
-
-
---- 
- 
-## French-English Translation Dataset
-
-* Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with **corpus size 2.3GB and 36 million sentence pairs**. Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
-* For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
-
-    ![sentences](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
-    
-    *Image of **sentence sequence prediction**. [Image Source](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py)*
-    
-* Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
-
-----
-
-## Pre-Process the WMT2014 Text Data
-
-```terminal
-cd data/
-bash prepare-iwslt14.sh
-
-TEXT=data/iwslt14.tokenized.fr-en
-
-# Binarize data
-$ fairseq preprocess -sourcelang fr -targetlang en \
-    -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
-    -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
-    -workers 60
+To install fairseq:
+```bash
+pip install fairseq
 ```
 
-
----
-
-## Technical Train the French-English Model
-
-**Train new CNN model (dropout rate of 0.2) with *-fairseq train***
-
-```python
-$ mkdir -p trainings/fconv
-
-$ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenized.fr-en \
-  -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
-  -momentum 0.99 -timeavg -bptt 0 
-  -savedir trainings/fconv
+On MacOS:
+```bash
+CFLAGS="-stdlib=libc++" pip install fairseq
 ```
 
-**Model Generation with *-fairseq generate***
+If you use Docker make sure to increase the shared memory size either with
+`--ipc=host` or `--shm-size` as command line options to `nvidia-docker run`.
 
-```python
-$ DATA=data-bin/iwslt14.tokenized.fr-en
+**Installing from source**
 
-$ fairseq generate-lines -sourcedict $DATA/dict.fr.th7 -targetdict $DATA/dict.en.th7 \
-  -path trainings/fconv/model_best_opt.th7 -beam 10 -nbest 
-| [target] Dictionary: 24738 types
-| [source] Dictionary: 35474 types
-
-> Je ne crains pas de mourir.
-
-Source: Je ne crains pas de mourir.
-Original_Sentence: Je ne crains pas de mourir.
-Hypothesis: -0.23804219067097 I am not scared of dying.
-Attention_Maxima: 2 2 3 4 5 6 7 8 9
-Hypothesis: -0.23861141502857 I am not scared of dying.
-Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
+To install fairseq from source and develop locally:
+```bash
+git clone https://github.com/pytorch/fairseq
+cd fairseq
+pip install --editable .
 ```
 
----
+# Getting Started
 
-## Visualizing Attention 
+The [full documentation](https://fairseq.readthedocs.io/) contains instructions
+for getting started, training new models and extending fairseq with new model
+types and tasks.
 
-* **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation. Use matplotlib library to display matrix via *plt.matshow(attention)* :
+# Pre-trained models and examples
 
-  ![attention matrix](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
-  
-  *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
+We provide pre-trained models and pre-processed, binarized test sets for several tasks listed below,
+as well as example training and evaluation commands.
 
----
+- [Translation](examples/translation/README.md): convolutional and transformer models are available
+- [Language Modeling](examples/language_model/README.md): convolutional and transformer models are available
 
-## References
+We also have more detailed READMEs to reproduce results from specific papers:
+- [Facebook FAIR's WMT19 News Translation Task Submission (Ng et al., 2019)](examples/wmt19/README.md)
+- [RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al., 2019)](examples/roberta/README.md)
+- [wav2vec: Unsupervised Pre-training for Speech Recognition (Schneider et al., 2019)](examples/wav2vec/README.md)
+- [Mixture Models for Diverse Machine Translation: Tricks of the Trade (Shen et al., 2019)](examples/translation_moe/README.md)
+- [Pay Less Attention with Lightweight and Dynamic Convolutions (Wu et al., 2019)](examples/pay_less_attention_paper/README.md)
+- [Understanding Back-Translation at Scale (Edunov et al., 2018)](examples/backtranslation/README.md)
+- [Classical Structured Prediction Losses for Sequence to Sequence Learning (Edunov et al., 2018)](https://github.com/pytorch/fairseq/tree/classic_seqlevel)
+- [Hierarchical Neural Story Generation (Fan et al., 2018)](examples/stories/README.md)
+- [Scaling Neural Machine Translation (Ott et al., 2018)](examples/scaling_nmt/README.md)
+- [Convolutional Sequence to Sequence Learning (Gehring et al., 2017)](examples/conv_seq2seq/README.md)
+- [Language Modeling with Gated Convolutional Networks (Dauphin et al., 2017)](examples/language_model/conv_lm/README.md)
 
-* "Attention Is All You Need": https://arxiv.org/abs/1706.03762
-* Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
-* Canada's Offical Languages Act https://laws-lois.justice.gc.ca/eng/acts/o-3.01/page-1.html
-* Sequence to Sequence models with PyTorch: https://github.com/MaximumEntropy/Seq2Seq-PyTorch
-* IBM's PyTorch seq-to-seq model:https://github.com/IBM/pytorch-seq2seq
-* Translation with Sequence to Sequence Network and Attention: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py
-* "Convolutional Sequence to Sequence Learning": https://arxiv.org/abs/1705.03122
-* Data processing scripts: https://www.dagshub.com/Guy/fairseq/src/67af40c9cca0241d797be13ae557d59c3732b409/data
+# Join the fairseq community
 
+* Facebook page: https://www.facebook.com/groups/fairseq.users
+* Google group: https://groups.google.com/forum/#!forum/fairseq-users
+
+# License
+fairseq(-py) is MIT-licensed.
+The license applies to the pre-trained models as well.
+
+# Citation
+
+Please cite as:
+
+```bibtex
+@inproceedings{ott2019fairseq,
+  title = {fairseq: A Fast, Extensible Toolkit for Sequence Modeling},
+  author = {Myle Ott and Sergey Edunov and Alexei Baevski and Angela Fan and Sam Gross and Nathan Ng and David Grangier and Michael Auli},
+  booktitle = {Proceedings of NAACL-HLT 2019: Demonstrations},
+  year = {2019},
+}
+```
