@@ -42,7 +42,7 @@ This is a machine learning natural language processing (NLP) project submission 
   
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
-* Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
+*Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.* [Image Source]()
 
 
 ## Convolutional Self-Attention Transformer Modelling
@@ -52,7 +52,7 @@ This is a machine learning natural language processing (NLP) project submission 
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
 
-Image. Transformer model high in BLEU scale and low on training costs Image Source
+*Image. Transformer model high in BLEU scale and low on training costs* [Image Source]()
 
 * Gating to control flow of hidden-units
 * Multi-Hop Attention Functionality
@@ -62,7 +62,7 @@ Image. Transformer model high in BLEU scale and low on training costs Image Sour
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
 
-Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. Image Source
+*Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
 
 ## French-English Translation Dataset
 * Statistical machine translation [**WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs**. 
@@ -70,11 +70,13 @@ Image of Multi-hop Attention tensor computations where green lines represent att
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
-Image of sentence sequence prediction. Image Source
+
+*Image of sentence sequence prediction. [Image Source]()*
 
 Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
 ## Pre-Process the WMT2014 Text Data
+
 ```python 
 cd data/
 bash prepare-iwslt14.sh
@@ -89,6 +91,7 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
 ```
 
 ## Technical Train the French-English Model
+
 Train new CNN model (dropout rate of 0.2) with -fairseq train
 ```python 
 $ mkdir -p trainings/fconv
@@ -122,11 +125,11 @@ Step by step visualization of the encoder-decoder network attention matrix as it
 ```
 
 ## Visualizing Attention
-* Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
+* **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
 
-Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."
+*Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
 
 
 
