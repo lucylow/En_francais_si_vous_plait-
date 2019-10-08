@@ -57,6 +57,7 @@
   * "On the **WMT 2014 English-to-French translation** task (a widely used **benchmark metric** for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
+  
   *Image. Transformer model high in BLEU scale and low on training costs* [Image Source]()
 
 * Gating to control flow of hidden-units
