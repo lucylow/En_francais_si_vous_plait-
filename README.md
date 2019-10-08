@@ -30,7 +30,9 @@
 * **Financial Industry**
     * **Reduce the manual processing** required to retrive corporate data
     * Ex: Information from financial reports, press releases, or news articles
-    
+
+---
+
 ## Technical Tools
 * [**Pytorch**](https://pytorch.org/)
     * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
@@ -46,6 +48,7 @@
 
 *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.* [Image Source]()
 
+---
 
 ## Convolutional Self-Attention Transformer Modelling
 * Measure speed translations
@@ -66,6 +69,8 @@
 
 *Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
 
+---
+
 ## French-English Translation Dataset
 * Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs. 
 * Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
@@ -76,6 +81,8 @@
 *Image of sentence sequence prediction. [Image Source]()*
 
 Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
+
+---
 
 ## Pre-Process the WMT2014 Text Data
 
@@ -92,6 +99,8 @@ $ fairseq preprocess -sourcelang fr -targetlang en \
     -workers 60
 ```
 
+---
+
 ## Technical Train the French-English Model
 
 Train new CNN model (dropout rate of 0.2) with -fairseq train
@@ -103,6 +112,8 @@ $ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenize
   -momentum 0.99 -timeavg -bptt 0 
   -savedir trainings/fconv
 ```
+
+---
 
 ## Model Generation with -fairseq generate
 
@@ -126,6 +137,8 @@ Visualizing Attention
 Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 ```
 
+---
+
 ## Visualizing Attention
 * **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 
@@ -133,7 +146,7 @@ Step by step visualization of the encoder-decoder network attention matrix as it
 
 *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
 
-
+---
 
 ## References
 * "Attention Is All You Need": https://arxiv.org/abs/1706.03762
