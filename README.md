@@ -1,5 +1,5 @@
 # En français si vous plait?
-This is a machine learning natural language processing (NLP) project submission for the Global PyTorch Summer Hackathon! #PTSH19. Pour la documentation en français, cliquez ici!
+This is a machine learning natural language processing (NLP) project submission for the **Global PyTorch Summer Hackathon! #PTSH19**. [Pour la documentation en français, cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -11,24 +11,25 @@ This is a machine learning natural language processing (NLP) project submission 
 
 
 ## Language Barrier Motivation
-* French-English translation service using natural language processing (NLP) with a vision of connecting people through language and advancing a barrier free society for billingual speakers
-* As a Canadian citizen, ensure respect for English and French as the offical languages of Canada and have equality of status, rights, and privileges
+* French-English translation service using natural language processing (NLP) with a vision of **connecting people through language** and **advancing a barrier free society for billingual speakers**
+* As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have equality of status, rights, and privileges
 
 
 ## Applications & Market Opportunities
-* Customer Service
+* **Customer Service**
     * Chatbots taking over repetitive easy-to-automate human jobs
     * Ex: Bank tellers, cashiers, or sales associates
-* Legal Industry
+* **Legal Industry**
     * NLP used to automate or summarize long and mundane documents
     * Ex: One legal case has an average of 400-500 pages
-* Financial Industry
+* **Financial Industry**
     * Reduce the manual processing required to retrive corporate data
     * Ex: Information from financial reports, press releases, or news articles
 
 
 ## Natural Language Processing (NLP)
-* Sub-field in Artifical Intelligence using machine learning and artifical neural networks
+* Sub-field in Artifical Intelligence 
+    * Uses machine learning and artifical neural networks
     * Ability of a machine to analyse, understand, and generate human speech
 * Natural languages
     * Languages that are native to people
@@ -44,36 +45,33 @@ This is a machine learning natural language processing (NLP) project submission 
 * **Facebook Research's Fairseq**
     * Sequence modeling toolkit written in PyTorch
     * Train custom models for Neural Machine Translation (NMT) - translation, summarization, language modeling, and other text generation tasks
-    * Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs
-* **Machine language translation transformer model from Attention Is All You Need using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers **
-    * Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
-
-* Transformer model
+* **Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**
+  * Machine language translation transformer model from Attention Is All You Need using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
+  * Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
 
 * Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
 
-* **Convolutional Self-Attention Transformer Modelling**
-    * Measure speed translations
-    * Record the translation time once machine learning system is shown a sentence to quantify results
-    * "On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
+
+## Convolutional Self-Attention Transformer Modelling
+* Measure speed translations
+* Record the translation time once machine learning system is shown a sentence to quantify results
+* "On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
 
 
 Image. Transformer model high in BLEU scale and low on training costs Image Source
 
 * Gating to control flow of hidden-units
-
 * Multi-Hop Attention Functionality
-
 * Self attention layers - where all the keys, values, and queries come from the same input
-
 * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. Network has two decoder layers and attention is paid to each layer. Refer to image below.
 
 
 Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. Image Source
 
 ## French-English Translation Dataset
-* Statistical machine translation WMT 2014 French-English Benchmark with corpus size 2.3GB and 36 million sentence pairs. Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
+* Statistical machine translation **WMT 2014 French-English Benchmark with corpus size 2.3GB and 36 million sentence pairs**. 
+* Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
 
@@ -128,7 +126,6 @@ Visualizing Attention
 Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 ```
 
-attention matrix
 
 Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."
 
