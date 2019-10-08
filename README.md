@@ -1,4 +1,4 @@
-# En français si vous plait?
+# En Français Si Vous Plait?
 This is a machine learning natural language processing (NLP) project submission for the **Global PyTorch Summer Hackathon! #PTSH19**. [Pour la documentation en français, cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
 <div>
   
@@ -25,28 +25,15 @@ This is a machine learning natural language processing (NLP) project submission 
 * **Financial Industry**
     * Reduce the manual processing required to retrive corporate data
     * Ex: Information from financial reports, press releases, or news articles
-
-
-## Natural Language Processing (NLP)
-* Sub-field in Artifical Intelligence 
-    * Uses machine learning and artifical neural networks
-    * Ability of a machine to analyse, understand, and generate human speech
-* Natural languages
-    * Languages that are native to people
-    * Ex: English, French, or Mandarin
-* Artificial languages
-    * Languages that computers can operate on
-    * Ex: Python, Java, or C++
-
-
+    
 ## Technical Tools
-* **Pytorch**
+* [**Pytorch**](https://pytorch.org/)
     * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
-* **Facebook Research's Fairseq**
+* [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/)
     * Sequence modeling toolkit written in PyTorch
     * Train custom models for Neural Machine Translation (NMT) - translation, summarization, language modeling, and other text generation tasks
-* **Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**
-  * Machine language translation transformer model from Attention Is All You Need using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
+* [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
+  * Machine language translation transformer model from [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf) using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
   * Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
 
 * Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
