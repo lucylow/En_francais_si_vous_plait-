@@ -116,7 +116,7 @@ Step by step visualization of the encoder-decoder network attention matrix as it
 ## Visualizing Attention
 * Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 
-attention matrix
+![https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png]()
 
 Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."
 
