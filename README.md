@@ -1,5 +1,5 @@
 # En Français Si Vous Plait?
-This is a machine learning natural language processing (NLP) project submission for the **Global PyTorch Summer Hackathon! #PTSH19**. [Pour la documentation en français, cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
+This is a machine learning natural language processing (NLP) project submission for the [**Global PyTorch Summer Hackathon! #PTSH19**](https://pytorch.devpost.com/). Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -57,7 +57,7 @@ Image. Transformer model high in BLEU scale and low on training costs Image Sour
 Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. Image Source
 
 ## French-English Translation Dataset
-* Statistical machine translation **WMT 2014 French-English Benchmark with corpus size 2.3GB and 36 million sentence pairs**. 
+* Statistical machine translation [**WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs**. 
 * Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
