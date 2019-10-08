@@ -2,7 +2,7 @@
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/pytorch%20banner.png)
 
-This is a machine learning natural language processing (NLP) project submission for the [**Global PyTorch Summer Hackathon! #PTSH19**](https://pytorch.devpost.com/). Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
+**This is a machine learning natural language processing (NLP) project submission for the [**Global PyTorch Summer Hackathon! #PTSH19**](https://pytorch.devpost.com/).** Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -20,13 +20,13 @@ This is a machine learning natural language processing (NLP) project submission 
 
 ## Applications & Market Opportunities
 * **Customer Service**
-    * Chatbots taking over repetitive easy-to-automate human jobs
+    * Chatbots taking over repetitive **easy-to-automate human jobs**
     * Ex: Bank tellers, cashiers, or sales associates
 * **Legal Industry**
-    * NLP used to automate or summarize long and mundane documents
+    * NLP used to **automate or summarize** long and mundane documents
     * Ex: One legal case has an average of 400-500 pages
 * **Financial Industry**
-    * Reduce the manual processing required to retrive corporate data
+    * **Reduce the manual processing** required to retrive corporate data
     * Ex: Information from financial reports, press releases, or news articles
     
 ## Technical Tools
@@ -34,10 +34,10 @@ This is a machine learning natural language processing (NLP) project submission 
     * Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
 * [**Facebook Research's Fairseq**](https://ai.facebook.com/tools/fairseq/)
     * Sequence modeling toolkit written in PyTorch
-    * Train custom models for Neural Machine Translation (NMT) - translation, summarization, language modeling, and other text generation tasks
+    * Train custom models for **Neural Machine Translation (NMT)** - translation, summarization, language modeling, and other text generation tasks
 * [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
-  * Machine language translation transformer model from [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf) using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
-  * Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
+  * Machine language translation transformer model from [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf) using **encoder-decoder attention mechanisms in a sequence-to-sequence model** that features stacked self attention layers
+  * Transduction model relying on **self-attention layers to compute input and output represenations where the attention functions maps** [query, key-value pairs] to vector outputs of [query, key-value pairs]
   
   
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
@@ -47,17 +47,17 @@ This is a machine learning natural language processing (NLP) project submission 
 
 ## Convolutional Self-Attention Transformer Modelling
 * Measure speed translations
-* Record the translation time once machine learning system is shown a sentence to quantify results
-* "On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
+  * Record the translation time once machine learning system is shown a sentence to quantify results
+  * "On the **WMT 2014 English-to-French translation** task (a widely used **benchmark metric** for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
-![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
 
-*Image. Transformer model high in BLEU scale and low on training costs* [Image Source]()
+  *Image. Transformer model high in BLEU scale and low on training costs* [Image Source]()
 
 * Gating to control flow of hidden-units
 * Multi-Hop Attention Functionality
-* Self attention layers - where all the keys, values, and queries come from the same input
-* CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. Network has two decoder layers and attention is paid to each layer. Refer to image below.
+  * Self attention layers - where all the keys, values, and queries come from the same input
+  * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
@@ -66,7 +66,7 @@ This is a machine learning natural language processing (NLP) project submission 
 
 ## French-English Translation Dataset
 * Statistical machine translation [**WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs**. 
-* Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
+* Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
 ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
