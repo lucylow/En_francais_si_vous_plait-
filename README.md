@@ -46,6 +46,7 @@
   
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
+
   *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.* [Image Source]()
 
 ---
@@ -64,6 +65,7 @@
   * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
+  
   *Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
 
 ---
@@ -75,6 +77,7 @@
 * Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
+  
   *Image of sentence sequence prediction. [Image Source]()*
 
 
@@ -139,6 +142,7 @@ Step by step visualization of the encoder-decoder network attention matrix as it
 * **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
+  
   *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
 
 ---
