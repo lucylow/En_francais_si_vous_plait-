@@ -113,8 +113,14 @@ Visualizing Attention
 Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 ```
 
+## Visualizing Attention
+* Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
+
+attention matrix
 
 Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."
+
+
 
 ## References
 * "Attention Is All You Need": https://arxiv.org/abs/1706.03762
