@@ -1,77 +1,79 @@
-# En_francais_si_vous_plait-
-
-En français si vous plait?
+# En français si vous plait?
 This is a machine learning natural language processing (NLP) project submission for the Global PyTorch Summer Hackathon! #PTSH19. Pour la documentation en français, cliquez ici!
 
 Status GitHub Issues GitHub Pull Requests License
 
-Language Barrier Motivation
-French-English translation service using natural language processing (NLP) with a vision of connecting people through language and advancing a barrier free society for billingual speakers
-As a Canadian citizen, ensure respect for English and French as the offical languages of Canada and have equality of status, rights, and privileges
-Applications & Market Opportunities
-Customer Service
-Chatbots taking over repetitive easy-to-automate human jobs
-Ex: Bank tellers, cashiers, or sales associates
-Legal Industry
-NLP used to automate or summarize long and mundane documents
-Ex: One legal case has an average of 400-500 pages
-Financial Industry
-Reduce the manual processing required to retrive corporate data
-Ex: Information from financial reports, press releases, or news articles
-Natural Language Processing (NLP)
-Sub-field in Artifical Intelligence using machine learning and artifical neural networks
-Ability of a machine to analyse, understand, and generate human speech
-Natural languages
-Languages that are native to people
-Ex: English, French, or Mandarin
-Artificial languages
-Languages that computers can operate on
-Ex: Python, Java, or C++
-Technical Tools
-Pytorch
+## Language Barrier Motivation
+* French-English translation service using natural language processing (NLP) with a vision of connecting people through language and advancing a barrier free society for billingual speakers
+* As a Canadian citizen, ensure respect for English and French as the offical languages of Canada and have equality of status, rights, and privileges
 
-Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
-Facebook Research's Fairseq
 
-Sequence modeling toolkit written in PyTorch
-Train custom models for Neural Machine Translation (NMT) - translation, summarization, language modeling, and other text generation tasks
-Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs
+## Applications & Market Opportunities
+* Customer Service
+* Chatbots taking over repetitive easy-to-automate human jobs
+* Ex: Bank tellers, cashiers, or sales associates
+* Legal Industry
+* NLP used to automate or summarize long and mundane documents
+* Ex: One legal case has an average of 400-500 pages
+* Financial Industry
+* Reduce the manual processing required to retrive corporate data
+* Ex: Information from financial reports, press releases, or news articles
+
+
+## Natural Language Processing (NLP)
+* Sub-field in Artifical Intelligence using machine learning and artifical neural networks
+* Ability of a machine to analyse, understand, and generate human speech
+* Natural languages
+* Languages that are native to people
+* Ex: English, French, or Mandarin
+* Artificial languages
+* Languages that computers can operate on
+* Ex: Python, Java, or C++
+
+
+## Technical Tools
+* Pytorch
+* Open source deep learning research platform that provides maximum flexibility and speed and provides tensors that live on the GPU accelerating the computation
+* Facebook Research's Fairseq
+* Sequence modeling toolkit written in PyTorch
+* Train custom models for Neural Machine Translation (NMT) - translation, summarization, language modeling, and other text generation tasks
+* Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs
 
 Machine language translation transformer model from Attention Is All You Need using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
 
-Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
+* Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
 
-transformer model
+* transformer model
 
-Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
+* Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
 
-Convolutional Self-Attention Transformer Modelling
-Measure speed translations
+* Convolutional Self-Attention Transformer Modelling
+* Measure speed translations
 
-Record the translation time once machine learning system is shown a sentence to quantify results
+* Record the translation time once machine learning system is shown a sentence to quantify results
 
-"On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
+* "On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
 alt text
 
 Image. Transformer model high in BLEU scale and low on training costs Image Source
 
-Gating to control flow of hidden-units
+* Gating to control flow of hidden-units
 
-Multi-Hop Attention Functionality
+* Multi-Hop Attention Functionality
 
-Self attention layers - where all the keys, values, and queries come from the same input
+* Self attention layers - where all the keys, values, and queries come from the same input
 
-CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. Network has two decoder layers and attention is paid to each layer. Refer to image below.
+* CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. Network has two decoder layers and attention is paid to each layer. Refer to image below.
 
 alt text bonjour
 
 Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. Image Source
 
-French-English Translation Dataset
-Statistical machine translation WMT 2014 French-English Benchmark with corpus size 2.3GB and 36 million sentence pairs. Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
+## French-English Translation Dataset
+* Statistical machine translation WMT 2014 French-English Benchmark with corpus size 2.3GB and 36 million sentence pairs. Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
 
-For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
+* For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
 sentences
 
@@ -79,28 +81,34 @@ Image of sentence sequence prediction. Image Source
 
 Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
-Pre-Process the WMT2014 Text Data
+## Pre-Process the WMT2014 Text Data
+''' python
 cd data/
 bash prepare-iwslt14.sh
 
 TEXT=data/iwslt14.tokenized.fr-en
 
-# Binarize data
+Binarize data
 $ fairseq preprocess -sourcelang fr -targetlang en \
     -trainpref $TEXT/train -validpref $TEXT/valid -testpref $TEXT/test \
     -thresholdsrc 3 -thresholdtgt 3 -destdir data-bin/iwslt14.tokenized.fr-en
     -workers 60
-Technical Train the French-English Model
-Train new CNN model (dropout rate of 0.2) with -fairseq train
+'''
 
+## Technical Train the French-English Model
+Train new CNN model (dropout rate of 0.2) with -fairseq train
+''' python
 $ mkdir -p trainings/fconv
 
 $ fairseq train -sourcelang fr -targetlang en -datadir data-bin/iwslt14.tokenized.fr-en \
   -model fconv -nenclayer 4 -nlayer 3 -dropout 0.2 -optim nag -lr 0.25 -clip 0.1 \
   -momentum 0.99 -timeavg -bptt 0 
   -savedir trainings/fconv
-Model Generation with -fairseq generate
+'''
 
+## Model Generation with -fairseq generate
+
+''' python
 $ DATA=data-bin/iwslt14.tokenized.fr-en
 
 $ fairseq generate-lines -sourcedict $DATA/dict.fr.th7 -targetdict $DATA/dict.en.th7 \
@@ -118,12 +126,13 @@ Hypothesis: -0.23861141502857 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 Visualizing Attention
 Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
+'''
 
 attention matrix
 
 Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."
 
-References
+## References
 "Attention Is All You Need": https://arxiv.org/abs/1706.03762
 Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
 Canada's Offical Languages Act https://laws-lois.justice.gc.ca/eng/acts/o-3.01/page-1.html
