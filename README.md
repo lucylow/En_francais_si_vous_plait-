@@ -1,7 +1,14 @@
 # En français si vous plait?
 This is a machine learning natural language processing (NLP) project submission for the Global PyTorch Summer Hackathon! #PTSH19. Pour la documentation en français, cliquez ici!
+<div>
+  
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]()
+  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/En_francais_si_vous_plait-.svg)](https://github.com/lucylow/En_francais_si_vous_plait-/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/En_francais_si_vous_plait-.svg)](https://github.com/lucylow/En_francais_si_vous_plait-/pulls)
+  [![License](https://img.shields.io/bower/l/bootstrap)]()
 
-Status GitHub Issues GitHub Pull Requests License
+</div>
+
 
 ## Language Barrier Motivation
 * French-English translation service using natural language processing (NLP) with a vision of connecting people through language and advancing a barrier free society for billingual speakers
