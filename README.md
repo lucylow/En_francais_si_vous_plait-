@@ -1,4 +1,7 @@
 # En Français Si Vous Plait?
+
+![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/pytorch%20banner.png)
+
 This is a machine learning natural language processing (NLP) project submission for the [**Global PyTorch Summer Hackathon! #PTSH19**](https://pytorch.devpost.com/). Pour la documentation en français, [cliquez ici!](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/README-fr.md)
 <div>
   
@@ -35,6 +38,9 @@ This is a machine learning natural language processing (NLP) project submission 
 * [**Transformer Machine Learning Model with Sequence-Aligned RNNs or CNNs**](https://arxiv.org/pdf/1706.03762.pdf)
   * Machine language translation transformer model from [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf) using encoder-decoder attention mechanisms in a sequence-to-sequence model that features stacked self attention layers
   * Transduction model relying on self-attention layers to compute input and output represenations where the attention functions maps [query, key-value pairs] to vector outputs of [query, key-value pairs]
+  
+  
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
 * Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element. Image Source
 
@@ -44,7 +50,7 @@ This is a machine learning natural language processing (NLP) project submission 
 * Record the translation time once machine learning system is shown a sentence to quantify results
 * "On the WMT 2014 English-to-French translation task (a widely used benchmark metric for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
-
+![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
 
 Image. Transformer model high in BLEU scale and low on training costs Image Source
 
@@ -52,6 +58,8 @@ Image. Transformer model high in BLEU scale and low on training costs Image Sour
 * Multi-Hop Attention Functionality
 * Self attention layers - where all the keys, values, and queries come from the same input
 * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. Network has two decoder layers and attention is paid to each layer. Refer to image below.
+
+![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
 
 
 Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. Image Source
@@ -61,7 +69,7 @@ Image of Multi-hop Attention tensor computations where green lines represent att
 * Dataset too big to include in repo - download and extract to /data/iwslt14/ to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
-
+![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
 Image of sentence sequence prediction. Image Source
 
 Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
