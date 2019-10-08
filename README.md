@@ -12,11 +12,13 @@
 
 </div>
 
+---
 
 ## Language Barrier Motivation
 * French-English translation service using natural language processing (NLP) with a vision of **connecting people through language** and **advancing a barrier free society for billingual speakers**
 * As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have equality of status, rights, and privileges
 
+---
 
 ## Applications & Market Opportunities
 * **Customer Service**
@@ -65,7 +67,7 @@
 *Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
 
 ## French-English Translation Dataset
-* Statistical machine translation [**WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs**. 
+* Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs. 
 * Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 
