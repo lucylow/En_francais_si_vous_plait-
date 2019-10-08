@@ -46,7 +46,7 @@
   
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer-smaller-pic.png)
 
-*Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.* [Image Source]()
+  *Image of Transformer model. The encoder maps sequence X_n (x_1, x_2 ... x_n) --> sequence Z_n (z_1, z_2 ... z_n). From Z_n, the decoder generates sequence Y_n (y_1, y_2 ... y_n) element by element.* [Image Source]()
 
 ---
 
@@ -56,7 +56,6 @@
   * "On the **WMT 2014 English-to-French translation** task (a widely used **benchmark metric** for judging the accuracy of machine translation), attention model establishes a BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature"
 
   ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/Transformer%20BLEU%20scores%20Training%20Cost.png)
-
   *Image. Transformer model high in BLEU scale and low on training costs* [Image Source]()
 
 * Gating to control flow of hidden-units
@@ -64,10 +63,8 @@
   * Self attention layers - where all the keys, values, and queries come from the same input
   * CNN encoder creates a vector for each word to be translated, and CNN decoder translates words while PyTorch computations are being simultaneously made. **Network has two decoder layers and attention is paid to each layer.** Refer to image below.
 
-![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
-
-
-*Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/translation_illustration.gif)
+  *Image of Multi-hop Attention tensor computations where green lines represent attention paid to each French word. [Image Source]()*
 
 ---
 
@@ -75,12 +72,11 @@
 * Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs. 
 * Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
+* Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
-![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/sequence2equence_%20encoderdecoder.png)
+  *Image of sentence sequence prediction. [Image Source]()*
 
-*Image of sentence sequence prediction. [Image Source]()*
-
-Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
 ---
 
@@ -142,9 +138,8 @@ Step by step visualization of the encoder-decoder network attention matrix as it
 ## Visualizing Attention
 * **Step by step visualization of the encoder-decoder network attention matrix** as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 
-![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
-
-*Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/screenshots/attention_matrix.png)
+  *Image of attention matrix. Input steps vs output steps with the sample sentece "Je ne crains pas de mourir."*
 
 ---
 
