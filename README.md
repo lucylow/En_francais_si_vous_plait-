@@ -18,7 +18,7 @@
 * French-English translation service using natural language processing (NLP) with a vision of **connecting people through language** and **advancing a barrier free society for billingual speakers**
 * As a Canadian citizen, ensure respect for **English and French as the offical languages of Canada** and have equality of status, rights, and privileges
 
-![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/ma%20famille%20pic.png)
+  ![](https://github.com/lucylow/En_francais_si_vous_plait-/blob/master/ma%20famille%20pic.png)
 
 ---
 
