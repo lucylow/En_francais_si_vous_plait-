@@ -134,7 +134,6 @@ Attention_Maxima: 2 2 3 4 5 6 7 8 9
 Hypothesis: -0.23861141502857 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 Visualizing Attention
-Step by step visualization of the encoder-decoder network attention matrix as it goes through a sentance translation. Use matplotlib library to display matrix via plt.matshow(attention) :
 ```
 
 ---
