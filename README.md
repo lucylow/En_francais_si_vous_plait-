@@ -72,8 +72,7 @@
 ---
 
 ## French-English Translation Dataset
-* Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs. 
-* Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
+* Statistical machine translation [WMT 2014 French-English Benchmark](http://statmt.org/wmt14/translation-task.html#Download) with corpus size 2.3GB and 36 million sentence pairs. Dataset too big to include in repo - **download and extract to /data/iwslt14/** to replace iwslt14.en.txt and iwslt14.fr.txt
 * For French-English translations, order of words matter and and the number of words can be added during the translation. "Black cat" translate to "chat noir" and the "not" translate to "ne ___ pas". Refer to image below:
 * Dataset includes: Commoncrawl, Europarl-v7, Giga, News-commentary, and Undoc data
 
