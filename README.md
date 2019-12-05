@@ -132,7 +132,6 @@ Hypothesis: -0.23804219067097 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 6 7 8 9
 Hypothesis: -0.23861141502857 I am not scared of dying.
 Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
-Visualizing Attention
 ```
 
 ---
