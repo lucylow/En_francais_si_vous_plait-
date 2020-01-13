@@ -148,7 +148,6 @@ Attention_Maxima: 2 2 3 4 5 7 6 7 9 9
 ## References
 * "Attention Is All You Need": https://arxiv.org/abs/1706.03762
 * Fairseq Technical Documentation: https://fairseq.readthedocs.io/en/latest/models.html#module-fairseq.models.transformer
-* Canada's Offical Languages Act https://laws-lois.justice.gc.ca/eng/acts/o-3.01/page-1.html
 * A fast, batched Bi-RNN(GRU) encoder & attention decoder implementation in PyTorch: https://github.com/AuCson/PyTorch-Batch-Attention-Seq2seq
 * Gated-Attention Architectures for Task-Oriented Language Grounding: https://github.com/devendrachaplot/DeepRL-Grounding
 * Sequence to Sequence models with PyTorch: https://github.com/MaximumEntropy/Seq2Seq-PyTorch
